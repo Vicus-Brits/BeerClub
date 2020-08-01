@@ -1,6 +1,8 @@
 * {
     background: #264653;
     margin: 0;
+    padding: 0;
+    border:0;
     text-decoration: none;
     list-style: none;
 }
@@ -43,9 +45,14 @@
   }
 
 .myHeader {
-    background: #e9c46a;
-    min-height: 7em;
+    /* background: #e9c46a; */
     grid-row: 2/4;
+    margin: 0%;
+}
+
+.myHeader img {
+    width: 100%;
+    height: auto;
 }
 
 .myDisplay{
