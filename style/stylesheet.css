@@ -167,6 +167,7 @@ form {
 .myFooter {
     background: #e76f51;
     min-height: 7em;
+    width:100%
 }
 
 .beer_small {
@@ -343,6 +344,25 @@ input[type=text], select, textarea {
             min-height: 8em;
         }
 
+        .carousel{
+            width: 100%;
+  
+        }
+
+        .submenu{
+            width: 100%;
+        }
+
+        .navbar_ul{
+            display: flex;
+            flex-direction: column;  
+            padding: 0%; 
+        }
+
+        .navbar_ul li a{
+            width: 100%;
+        }
+
 
 }
     
@@ -351,7 +371,6 @@ input[type=text], select, textarea {
         .mywrapper{
             width:auto;
         }
-
 
         .myBeers_container {
 
@@ -383,7 +402,6 @@ input[type=text], select, textarea {
         .myBreweries_container{
             display: grid;
             grid-template-columns: auto;
-        
         }
 
         .brewery_left{ 
@@ -406,7 +424,24 @@ input[type=text], select, textarea {
             min-height: 8em;
         }
         
+        .carousel{
+            width: 100%;
+  
+        }
 
+        .submenu{
+            width: 100%;
+        }
+
+        .navbar_ul{
+            display: flex;
+            flex-direction: column;  
+            padding: 0%; 
+        }
+
+        .navbar_ul li a{
+            width: 100%;
+        }
 
     }
 
