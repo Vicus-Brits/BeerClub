@@ -3,23 +3,23 @@
     <head>
         <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
         <title>Home</title>
+
+
+        <script src="scripts/main.javascript"></script>
     </head>
     <body>
-        
         <div class="mywrapper">
             <nav class="navbar">
-                <ul class="navbar_ul">
+                <button class="navbar_button" onclick="myFunction()">&#9776;</button>
+                <ul class="navbar_ul" id="toggle_navbar_id">
                     <li class="navbar_li"><a href="index.html">HOME</a></li>
-                    <li><a href="beers.html">BEERS</a></li>
-                    <li><a href="breweries.html">BREWERIES</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="learn.html">LEARN</a></li>
-                    <li><a href="join.html">JOIN</a></li>
-                    <li><a href="">&#9776;</a></button></li>
+                    <li class="navbar_li"><a href="beers.html">BEERS</a></li>
+                    <li class="navbar_li"><a href="breweries.html">BREWERIES</a></li>
+                    <li class="navbar_li"><a href="about.html">ABOUT</a></li>
+                    <li class="navbar_li"><a href="learn.html">LEARN</a></li>
+                    <li class="navbar_li"><a href="join.html">JOIN</a></li>
                 </ul>
             </nav>
-
-
 
         <div class="myHeader"><img src="img/hder_small.jpg"> </div>
 
@@ -70,5 +70,19 @@
         </footer>
        
     </div>
+
+
+    <script>
+        function myFunction() {
+        var y = document.getElementById("toggle_navbar_id");
+        if (y.className === "navbar_ul") {
+            y.className += " navbar_hide";
+        } else {
+            y.className = "navbar_ul";
+        }
+        }
+    </script>
+
+
     </body>
 </html>

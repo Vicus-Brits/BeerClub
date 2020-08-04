@@ -8,15 +8,14 @@
         
         <div class="mywrapper">
             <nav class="navbar">
-                <ul class="navbar_ul">
+                <button class="navbar_button" onclick="myFunction()">&#9776;</button>
+                <ul class="navbar_ul" id="toggle_navbar_id">
                     <li class="navbar_li"><a href="index.html">HOME</a></li>
-                    <li><a href="beers.html">BEERS</a></li>
-                    <li><a href="breweries.html">BREWERIES</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="learn.html">LEARN</a></li>
-                    <li><a href="join.html">JOIN</a></li>
-                    <!-- <li><button class="hamburger">&#9776;</button></li> -->
-                    <!-- <li><button class="cross">&#735;</button></li> -->
+                    <li class="navbar_li"><a href="beers.html">BEERS</a></li>
+                    <li class="navbar_li"><a href="breweries.html">BREWERIES</a></li>
+                    <li class="navbar_li"><a href="about.html">ABOUT</a></li>
+                    <li class="navbar_li"><a href="learn.html">LEARN</a></li>
+                    <li class="navbar_li"><a href="join.html">JOIN</a></li>
                 </ul>
             </nav>
 
@@ -51,6 +50,16 @@
 
 
     </div>
+    <script>
+        function myFunction() {
+        var y = document.getElementById("toggle_navbar_id");
+        if (y.className === "navbar_ul") {
+            y.className += " navbar_hide";
+        } else {
+            y.className = "navbar_ul";
+        }
+        }
+    </script>
     </body>
 </html>
 
