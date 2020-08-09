@@ -200,7 +200,35 @@ footer a , footer p {
 
 .myContainer{
     background: honeydew;
-    min-height: 25em;
+    min-height: 20em;
+}
+
+.myContainer p {
+    background: honeydew;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+}
+
+.myjoke{
+border-style: solid;
+border-color: teal;
+background: teal;
+}
+
+.jokecontainer {
+    background: honeydew;
+    text-align: center;
+    vertical-align: middle;
+}
+.jokecontainer p {
+    background: teal;
+}
+.joke_button{
+    width: 200px;
+    height: 2em;
+    background: #941b0c;
 }
 
 .myContent{

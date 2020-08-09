@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JavaScript - read JSON from URL</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <div class="mypanel"></div>
+
+    <div class="myjoke"></div>
+
+
+    <script>
+    $.getJSON('http://time.jsontest.com', function(data) {
+        
+        var text = `Date: ${data.date}<br>
+                    Time: ${data.time}<br>
+                    Unix time: ${data.milliseconds_since_epoch}`
+                    
+        
+        $(".mypanel").html(text);
+    });
+
+
+
+    // https://api.chucknorris.io/jokes/random 
+
+
+    $.getJSON('https://api.chucknorris.io/jokes/random', function(joke) {
+        
+        var text = `${joke.value}<br>`
+                    
+        
+        $(".myjoke").html(text);
+    });
+
+
+    </script>
+    
+</body>
+</html>
