@@ -28,6 +28,9 @@ footer a , footer p {
     min-height:5em;
 }
 
+p {
+    background:white;
+}
 .myHeader{
     position: relative;
     text-align: center;
@@ -54,7 +57,7 @@ footer a , footer p {
 
 .mywrapper{
     width:1200px;
-    background: #606c38;
+    background: white;
     margin-left:auto;
     margin-right:auto;
 }
@@ -150,7 +153,7 @@ footer a , footer p {
 
 .myReadList{
     min-height: 4em;
-    background: seagreen;
+    background: white;
     display: flex;
 }
 
@@ -158,17 +161,20 @@ footer a , footer p {
     min-height: 2em;
     max-height: 2em;
     width: 250px;
-    background: steelblue;
+    /* background: steelblue; */
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left:auto;
     margin-right:auto;
+    /* border-radius: 1.1875rem; */
+    text-align: center;
+    background: white;
 }
 
 
 .myArticles {
     /* min-height: 20em; */
-    background:burlywood;
+    background:white;
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left:auto;
@@ -176,8 +182,13 @@ footer a , footer p {
     padding: 10px;
 }
 
+.myArticles a {
+        color: blue;
+        background:white;
+}
+
 .article{
-    background:peachpuff;
+    background:white;
     min-height: 2em;
     width: 90%;
     margin: 1em;
@@ -187,16 +198,18 @@ footer a , footer p {
     margin-right:auto;
 }
 
-.beer_article{
-    border: peru;
-    border-style: solid;
-}
+.beer_article h3 {
+color: #941b0c;
+background:white;
+min-height: 2em;
+} 
 
 
-.brew_article{
-    border: green;
-    border-style: solid;
-}
+.brew_article h3 {
+   color:  #bc3908;
+   background:white;
+   min-height: 2em;
+} 
 
 .myContainer{
     background: honeydew;
@@ -270,6 +283,15 @@ form {
     min-height: 5em;
 }
 
+.beer_small img {
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 200px;
+    min-height: 200px;
+}
+
+
+
 .beer_large {
     background: #6a040f;
     color: white;
@@ -278,11 +300,26 @@ form {
     min-height: 10em;
 }
 
+.beer_large img{
+    max-width: 400px;
+    min-width: 400px;
+    max-height: 400px;
+    min-height: 400px;
+}
+
+
 .beer_vertical {
     background: #d00000;
     color: white;
     grid-row: span 2;
     min-height: 10em;
+}
+
+.beer_vertical img {
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 400px;
+    min-height: 400px;
 }
 
 .beer_horizontal {
@@ -292,12 +329,19 @@ form {
     min-height: 5em;
 }
 
+.beer_horizontal img {
+    max-width: 400px;
+    min-width: 400px;
+    max-height: 200px;
+    min-height: 200px;
+}
 .myBreweries_container{
     background:white;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
 
 }
+
 
 .brewery_left{ 
     background: #335c67;
