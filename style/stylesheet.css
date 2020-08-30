@@ -1,17 +1,17 @@
 /* This website is styled with  a mobile first philosophy */
 
+/* Access : https://www.smashingmagazine.com/2013/07/simple-responsive-images-with-css-background-images/ */
+
+/* All */
 body {
-    background-color: lightblue;
+    background-color: #621708;
     margin: 0;
     padding: 0;
     border:0;
   }
 
-.myHeader img{
-    object-fit: cover;
-}
 
-/* NAVIGATION */
+/* NAVIGATION and HEADER*/
 .dropdownIcon {
     display:block; 
 }
@@ -41,13 +41,47 @@ body {
     font-size: 20px;
 }
 
-.navbar_ul li a:hover {
-    background: #621708;
-    color:white;
+
+
+
+.myHeader{
+    position: relative;
+    text-align: center;
+    color: white;
 }
+
+.text_center{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: none;
+    }
+
+
+.text_center h1 {
+        color:white;
+        background: #941b0c;
+        font-size: 3em;
+        width: 450px;
+        opacity:0.7;
+        font-family: 'lobster', cursive;
+    }
+
+
+   
+
 
 .navbar_ul li  a:active {
     background-color: #f6aa1c;
+}
+
+
+
+/* CONTENT */
+
+.myContent{
+    background:white;
 }
 
 

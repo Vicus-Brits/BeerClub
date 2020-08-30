@@ -2,88 +2,95 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <title>Learn</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         
         <div class="mywrapper">
-            <nav class="navbar">
-                <button class="navbar_button" onclick="myFunction()">&#9776;</button>
-                <ul class="navbar_ul" id="toggle_navbar_id">
-                    <li class="navbar_li"><a href="index.html">HOME</a></li>
-                    <li class="navbar_li"><a href="beers.html">BEERS</a></li>
-                    <li class="navbar_li"><a href="breweries.html">BREWERIES</a></li>
-                    <li class="navbar_li"><a href="learn.html">LEARN</a></li>
-                    <li class="navbar_li"><a href="join.html">JOIN</a></li>
-                </ul>
-            </nav>
 
-            <div class="myHeader">
-                <img src="img/hder_small.jpg"> 
-                <div class="text_center"><h1>LEARN</h1></div>
-            </div>
-
-        <div class="myReadList"> 
-            <div class="flexbutton"><button class="joke_button">READ ABOUT BEER</button></div>
-            <div class="flexbutton"><button class="joke_button">READ ABOUT BREWS</button></div>
-            <div class="flexbutton"><button class="joke_button">READ ABOUT BOTH</button></div>
-        </div>
-        <div class="myArticles"> 
-            <div class="article beer_article">
-                <h3>A brief history of craft beer in America</h3>
-                <p>In the 1970s something happened – thousands of people began to adopt the hobby of home brewing. Most people made beer for personal consumption, 
-                    but some entrepreneurial-minded folks saw an opportunity to launch an exciting start-up business...<a href="https://www.mixerdirect.com/blogs/mixer-direct-blog/a-brief-history-of-craft-beer#:~:text=Two%20Centuries%20of%20Status%20Quo,and%20ever%2Dgrowing%20customer%20base."> 
-                        read more</a></p>
-            </div>
-            <div class="article brew_article">
-                <h3>6 Tips Everyone Needs to Know Before They Brew Their Own Beer</h3>
-                <p>If you are just getting started then there are a few things you need to know. 
-                    By learning the basics and creating good habits from the beginning, you will find the entire process easier, more enjoyable, 
-                    and hopefully tastier..<a href="https://learn.kegerator.com/home-brewing-tips/"> 
-                        read more </a></p>
-            </div>
-            <div class="article beer_article">
-                <h3>There’s a craft beer revolution brewing in South Africa</h3>
-                <p>When you think of South Africa, you’d be forgiven if a gently sweating glass of Chenin Blanc is the tipple that immediately comes to mind. 
-                    But, thanks in part to a German most often spotted dressed entirely in yellow (complete with yellow shades and wheels to match), 
-                    there’s a craft beer revolution, ahem, ‘brewing’ in the Rainbow Nation..<a href="https://www.weareafricatravel.com/contemporary-africa/theres-craft-beer-revolution-brewing-south-africa/"> 
-                        read more </a></p>
-            </div>
-            <div class="article brew_article">
-                <h3>25+ Really Useful Home Brew Tips</h3>
-                <p>Simple kit brewing improvements for beginners..<a href="http://www.yourhomebrew.com/tips/"> 
-                    read more </a></p>
-            </div>
-            <div class="article beer_article">
-                <h3>Different Types of Beer</h3>
-                <p>All beers are either lagers or ales, and that's determined by the type of yeast used during the fermentation process. 
-                    Lagers are made with yeast that ferments at the bottom of the beer mixture, and ales are made with yeast that ferments at the top. 
-                    There are also spontaneously fermenting yeasts, which make wild or sour ales..<a href="https://www.webstaurantstore.com/article/27/different-types-of-beers.html"> 
-                        read more </a></p>
-            </div>
-            <div class="article brew_article">
-                <h3>10 Tips for Beginners  </h3>
-                <p> While simplifying the process is key to having fun homebrewing . . . 
-                    there is nothing that can ruin a batch of beer faster than not identifying potential problems with your water. 
-                    If your water is in question, start with reverse osmosis or distilled water. <a href="https://byo.com/article/10-tips-for-beginners/"> 
-                        read more </a></p>
-            </div>
-            <div class="article beer_article">
-                <h3>Five reasons that craft beer is better</h3>
-                <p>The average alcohol by volume (ABV) content of a craft beer is 5% to 10%, but some of the most popular craft beers have an 
-                    ABV as high as 40%! In contrast, beer produced in bulk by giant corporations who don’t put a little bit of love in 
-                    each bottle give you a drink that has an ABV of 4% to 6%, and as little as 2%. <a href="http://deadpresidentspub.com/five-reasons-craft-beer-better/"> 
-                        read more </a></p>
+        <nav class="navbar">
+            <button class="navbar_button" onclick="myFunction()">&#9776;</button>
+            <ul class="navbar_ul" id="toggle_navbar_id">
+                <li class="navbar_li"><a href="index.html">HOME</a></li>
+                <li class="navbar_li"><a href="beers.html">BEERS</a></li>
+                <li class="navbar_li"><a href="breweries.html">BREWERIES</a></li>
+                <li class="navbar_li"><a href="learn.html">LEARN</a></li>
+                <li class="navbar_li"><a href="join.html">JOIN</a></li>
+            </ul>
+        </nav>
+        <div class="myHeader">
+            <img src="img/hder_small.jpg"> 
+            <div class="text_center">
+                <h1>LEARN</h1>
             </div>
         </div>
-        
+
+        <div class="myContent">
+            <div class="myReadList"> 
+                <div class="flexbutton"><button class="joke_button">READ ABOUT BEER</button></div>
+                <div class="flexbutton"><button class="joke_button">READ ABOUT BREWS</button></div>
+                <div class="flexbutton"><button class="joke_button">READ ABOUT BOTH</button></div>
+            </div>
+
+            <div class="myArticles"> 
+                <div class="article beer_article">
+                    <h3>A brief history of craft beer in America</h3>
+                    <p>In the 1970s something happened – thousands of people began to adopt the hobby of home brewing. Most people made beer for personal consumption, 
+                        but some entrepreneurial-minded folks saw an opportunity to launch an exciting start-up business...<a href="https://www.mixerdirect.com/blogs/mixer-direct-blog/a-brief-history-of-craft-beer#:~:text=Two%20Centuries%20of%20Status%20Quo,and%20ever%2Dgrowing%20customer%20base."> 
+                            read more</a></p>
+                </div>
+                <div class="article brew_article">
+                    <h3>6 Tips Everyone Needs to Know Before They Brew Their Own Beer</h3>
+                    <p>If you are just getting started then there are a few things you need to know. 
+                        By learning the basics and creating good habits from the beginning, you will find the entire process easier, more enjoyable, 
+                        and hopefully tastier..<a href="https://learn.kegerator.com/home-brewing-tips/"> 
+                            read more </a></p>
+                </div>
+                <div class="article beer_article">
+                    <h3>There’s a craft beer revolution brewing in South Africa</h3>
+                    <p>When you think of South Africa, you’d be forgiven if a gently sweating glass of Chenin Blanc is the tipple that immediately comes to mind. 
+                        But, thanks in part to a German most often spotted dressed entirely in yellow (complete with yellow shades and wheels to match), 
+                        there’s a craft beer revolution, ahem, ‘brewing’ in the Rainbow Nation..<a href="https://www.weareafricatravel.com/contemporary-africa/theres-craft-beer-revolution-brewing-south-africa/"> 
+                            read more </a></p>
+                </div>
+                <div class="article brew_article">
+                    <h3>25+ Really Useful Home Brew Tips</h3>
+                    <p>Simple kit brewing improvements for beginners..<a href="http://www.yourhomebrew.com/tips/"> 
+                        read more </a></p>
+                </div>
+                <div class="article beer_article">
+                    <h3>Different Types of Beer</h3>
+                    <p>All beers are either lagers or ales, and that's determined by the type of yeast used during the fermentation process. 
+                        Lagers are made with yeast that ferments at the bottom of the beer mixture, and ales are made with yeast that ferments at the top. 
+                        There are also spontaneously fermenting yeasts, which make wild or sour ales..<a href="https://www.webstaurantstore.com/article/27/different-types-of-beers.html"> 
+                            read more </a></p>
+                </div>
+                <div class="article brew_article">
+                    <h3>10 Tips for Beginners  </h3>
+                    <p> While simplifying the process is key to having fun homebrewing . . . 
+                        there is nothing that can ruin a batch of beer faster than not identifying potential problems with your water. 
+                        If your water is in question, start with reverse osmosis or distilled water. <a href="https://byo.com/article/10-tips-for-beginners/"> 
+                            read more </a></p>
+                </div>
+                <div class="article beer_article">
+                    <h3>Five reasons that craft beer is better</h3>
+                    <p>The average alcohol by volume (ABV) content of a craft beer is 5% to 10%, but some of the most popular craft beers have an 
+                        ABV as high as 40%! In contrast, beer produced in bulk by giant corporations who don’t put a little bit of love in 
+                        each bottle give you a drink that has an ABV of 4% to 6%, and as little as 2%. <a href="http://deadpresidentspub.com/five-reasons-craft-beer-better/"> 
+                            read more </a></p>
+                </div>
+            </div>
+        </div>
         
         <footer>
             <p>Author: Vicus Brits<br>
             <a href="mailto:vicusbritsmail@gmail.com">vicusbritsmail@gmail.com</a></p>
         </footer>
+    <div class="test">
 
+    </div>
 
     </div>
     <script>
