@@ -1,12 +1,57 @@
+/* This website is styled with  a mobile first philosophy */
+
 body {
     background-color: lightblue;
+    margin: 0;
+    padding: 0;
+    border:0;
   }
 
-/* @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-  } */
+.myHeader img{
+    max-width: 100%;
+}
+
+/* NAVIGATION */
+.dropdownIcon {
+    display:block; 
+}
+
+.navbar_ul{
+    display: flex;
+    flex-direction: column;  
+    padding: 0%; 
+}
+
+.navbar_ul li a{
+    width: 100%;
+}
+
+.navbar_li_click{
+    display: block;
+}
+
+.navbar_ul li a{
+    color:white;
+    display: block;
+    width: 100%;
+    text-align: center;
+    float: left;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar_ul li a:hover {
+    background: #621708;
+    color:white;
+}
+
+.navbar_ul li  a:active {
+    background-color: #f6aa1c;
+}
+
+
+/* MEDIA QUERIES */
 
 @media only screen and (min-width: 600px){
     body {
@@ -14,7 +59,8 @@ body {
     }
   }
 
-  @media only screen and (min-width: 992px){
+
+@media only screen and (min-width: 992px){
     body {
       background-color: rgb(216, 216, 41);
     }
