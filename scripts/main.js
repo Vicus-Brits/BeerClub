@@ -11,17 +11,52 @@ function myFunction() {
 }
 
 
-function aboutBeer() {
+function readBeer() {
     alert("About Beer");
 
+    var myBrews = document.querySelectorAll('.brew_article'),
+        i = 0,
+        l = myBrews.length;
+    
+    for (i; i < l; i++) {
+        myBrews[i].style.display = 'none';
+    }
+
+    var myBeers = document.querySelectorAll('.beer_article'),
+    i = 0,
+    l = myBeers.length;
+
+    for (i; i < l; i++) {
+        myBeers[i].style.display = 'block';
+    }
+
 }
 
-function aboutBrews() {
+function readBrews() {
     alert("About Brews");
 
+    var myBrews = document.querySelectorAll('.brew_article'),
+        i = 0,
+        l = myBrews.length;
+    
+    for (i; i < l; i++) {
+        myBrews[i].style.display = 'block';
+    }
+
+    var myBeers = document.querySelectorAll('.beer_article'),
+    i = 0,
+    l = myBeers.length;
+
+    for (i; i < l; i++) {
+        myBeers[i].style.display = 'none';
+    }
+
 }
 
-function aboutBoth() {
-    alert("About Both");
+
+function readBoth() {
+
+    location.reload();
+    return false;
 
 }
