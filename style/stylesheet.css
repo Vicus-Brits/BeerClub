@@ -4,7 +4,7 @@
 
 /* All */
 body {
-    background-color: #621708;
+    background-color: black;
     margin: 0;
     padding: 0;
     border:0;
@@ -19,7 +19,8 @@ body {
 }
 
 .navbar_button{
-    background:white;
+    background:black;
+    color:white;
     border:none;
     border-block-style: none;
     font-size: 2em;
@@ -98,6 +99,23 @@ body {
     background:white;
 }
 
+
+
+/* LEARN */
+
+.myReadList{
+    margin: 0;
+    background:black;
+}
+.learn_button{
+    display: block;
+    color:white;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: none;
+    padding: 3px;
+}
 
 /* MEDIA QUERIES */
 
