@@ -36,6 +36,11 @@ p {
     position: relative;
     text-align: center;
     color: white;
+    max-width: 600px;
+}
+
+.myHeader img {
+    max-width: 100%;
 }
 
 .text_center{

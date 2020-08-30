@@ -12,8 +12,20 @@ body {
 
 
 /* NAVIGATION and HEADER*/
-.dropdownIcon {
-    display:block; 
+
+
+.navbar_hide{
+    display:none;
+}
+
+.navbar_button{
+    background:white;
+    border:none;
+    border-block-style: none;
+    font-size: 2em;
+    position: fixed;
+    z-index:1
+
 }
 
 .navbar_ul{
@@ -42,12 +54,16 @@ body {
 }
 
 
-
-
 .myHeader{
     position: relative;
     text-align: center;
     color: white;
+    /* max-width: 600px; */
+}
+
+.myHeader img {
+    width: 100%;
+    height: auto;
 }
 
 .text_center{
@@ -68,15 +84,13 @@ body {
         font-family: 'lobster', cursive;
     }
 
-
-   
-
-
 .navbar_ul li  a:active {
     background-color: #f6aa1c;
 }
 
-
+.navbar_ul li  a:hover {
+    background-color: #335c67;
+}
 
 /* CONTENT */
 
@@ -99,3 +113,7 @@ body {
       background-color: rgb(216, 216, 41);
     }
   }
+
+
+
+
