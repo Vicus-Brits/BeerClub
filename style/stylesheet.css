@@ -8,7 +8,7 @@ body {
   }
 
 .myHeader img{
-    max-width: 100%;
+    object-fit: cover;
 }
 
 /* NAVIGATION */
