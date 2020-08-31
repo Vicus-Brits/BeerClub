@@ -81,32 +81,33 @@ body {
 }
 
 .text_center{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: none;
-    }
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+}
 
 .text_center h1 {
-        color:white;
-        background: #941b0c;
-        font-size: 2em;
-        width: 450px;
-        opacity:0.7;
-        font-family: 'lobster', cursive;
-    }
+    color:white;
+    background: #941b0c;
+    font-size: 2em;
+    width: 450px;
+    opacity:0.7;
+    font-family: 'lobster', cursive;
+}
 
 /* CONTENT */
 
 .myContent{
     background:white;
+
 }
 
 .myArticles{
-margin-left:5%;
-margin-right:5%;
+    margin-left:5%;
+    margin-right:5%;
+;
 }
 
 .brew_article h3{
@@ -120,16 +121,17 @@ margin-right:5%;
     padding: 0;
     background:#941b0c;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    max-width: 600px;
+
 }
 
 .learn_button{
     display: block;
     color:white;
-    width: 200px;
+    min-width: 150px;
     border: none;
     background: none;
-
 }
 
 .learn_button:hover{
@@ -138,6 +140,43 @@ margin-right:5%;
 
 .learn_button:focus { 
     outline: none; 
+}
+
+
+/* FOOTER */
+
+.footer{
+    background-color:#941b0c;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column; 
+}
+
+.footer-links a {
+    display: block;
+
+    color:black;
+    text-decoration: none;
+    padding-top:15px;
+    min-width: 300px;
+}
+
+.logolink{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+.footer_other{
+    text-align:center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.footer_other a {
+    color: black;
+    text-decoration: none;
 }
 
 

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <title>Learn</title>
@@ -9,31 +10,31 @@
     </head>
     <body>
         
-        <div class="mywrapper">
+    <div class="mywrapper">
         
         <nav class="navbar">
             <button class="navbar_button" onclick="myFunction()">&#9776;</button>
-            <ul class="navbar_ul" id="toggle_navbar_id">
-                
+            <ul class="navbar_ul" id="toggle_navbar_id">  
                 <li class="navbar_li"><a href="index.html">HOME</a></li>
                 <li class="navbar_li"><a href="beers.html">BEERS</a></li>
                 <li class="navbar_li"><a href="breweries.html">BREWERIES</a></li>
-                <li class="navbar_li"><a href="learn.html">LEARN</a></li>
+                <li class="navbar_li"><a href="learn.html">ARTICLES</a></li>
                 <li class="navbar_li"><a href="join.html">JOIN</a></li>
             </ul>
         </nav>
         <div class="myHeader">
             <img src="img/hder_small.jpg"> 
             <div class="text_center">
-                <h1>LEARN</h1>
+                <h1>A R T I C L E S</h1>
             </div>
         </div>
 
         <div class="myContent">
+
             <div class="myReadList"> `
-                <div class="flexbutton"><button class="learn_button" onclick="readBeer()" >BEERS</button></div>
-                <div class="flexbutton"><button class="learn_button" onclick="readBrews()" >BREWS</button></div>
-                <div class="flexbutton"><button class="learn_button" onclick="readBoth()" >BOTH</button></div>
+                <div><button class="learn_button" onclick="readBeer()" >BEERS</button></div>
+                <div><button class="learn_button" onclick="readBrews()" >BREWS</button></div>
+                <div><button class="learn_button" onclick="readBoth()" >BOTH</button></div>
             </div>
 
             <div class="myArticles"> 
@@ -82,17 +83,52 @@
                         ABV as high as 40%! In contrast, beer produced in bulk by giant corporations who don’t put a little bit of love in 
                         each bottle give you a drink that has an ABV of 4% to 6%, and as little as 2%. <a href="http://deadpresidentspub.com/five-reasons-craft-beer-better/"> 
                             read more </a></p>
+                    
                 </div>
             </div>
         </div>
-        
-        <footer>
-            <p>Author: Vicus Brits<br>
-            <a href="mailto:vicusbritsmail@gmail.com">vicusbritsmail@gmail.com</a></p>
-        </footer>
-    <div class="test">
+        <br>
+		<footer class="footer">
 
-    </div>
+			<div class="logolink">
+                <div >
+                <img src="img/BeerClub.png">
+                </div>
+                <div>
+				<p class="footer-links">
+                    <a href="index.html">HOME</a>
+                    <a href="beers.html">BEERS</a>
+                    <a href="breweries.html">BREWERIES</a>
+                    <a href="learn.html">LEARN</a>
+                    <a href="join.html">JOIN</a>
+                </p>
+                </div>	
+			</div>
+
+			<div class="footer_other">
+                <div>
+                    <p>© 2020 Vicus Brits UoL Project</p>
+                </div>
+				<div>
+					<p><i class="fa fa-map-marker"></i>
+					  Centurion Area
+						Gauteng - South Africa</p>
+				</div>
+				<div>
+					<p><i class="fa fa-phone"></i>
+					+27 82-9040718</p>
+				</div>
+				<div>
+					<p></p><i class="fa fa-envelope"></i>
+					<a href="mailto:vicusbritsmail@gmail.com">vicusbritsmail@gmail.com</a></p>
+				</div>
+                <div >
+                    <p>About the Club: On every second Saturday of the month we organise a fun trip to a new craft beer brewery.</p>
+                </div>
+            </div>
+	
+		</footer>
+
 
     </div>
     </body>

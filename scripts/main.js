@@ -12,7 +12,6 @@ function myFunction() {
 
 
 function readBeer() {
-    alert("About Beer");
 
     var myBrews = document.querySelectorAll('.brew_article'),
         i = 0,
@@ -33,7 +32,6 @@ function readBeer() {
 }
 
 function readBrews() {
-    alert("About Brews");
 
     var myBrews = document.querySelectorAll('.brew_article'),
         i = 0,
@@ -56,7 +54,20 @@ function readBrews() {
 
 function readBoth() {
 
-    location.reload();
-    return false;
+    var myBrews = document.querySelectorAll('.brew_article'),
+        i = 0,
+        l = myBrews.length;
+    
+    for (i; i < l; i++) {
+        myBrews[i].style.display = 'block';
+    }
+
+    var myBeers = document.querySelectorAll('.beer_article'),
+    i = 0,
+    l = myBeers.length;
+
+    for (i; i < l; i++) {
+        myBeers[i].style.display = 'block';
+    }
 
 }
