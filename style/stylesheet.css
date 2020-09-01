@@ -148,14 +148,15 @@ body {
     display: flex;
     flex-direction: row;  
     flex-wrap: wrap;
-    padding: 0%;   
+    padding: 0%;  
+    margin:auto; 
 }
 
 .beer_small {
-    max-width: 280px;
-    min-width: 280px;
-    max-height: 280px;
-    min-height: 280px;
+    max-width: 240px;
+    min-width: 240px;
+    max-height: 240px;
+    min-height: 240px;
 }
 
 
@@ -170,11 +171,10 @@ body {
 }
 
 .beer_horizontal {
-    max-width: 580px;
-    min-width: 580px;
-    max-height: 280px;
-    min-height: 280px;
-
+    max-width: 480px;
+    min-width: 480px;
+    max-height: 240px;
+    min-height: 240px;
 }
 
 .beer_horizontal img {
