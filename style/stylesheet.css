@@ -72,7 +72,6 @@ body {
     position: relative;
     text-align: center;
     color: white;
-    /* max-width: 600px; */
 }
 
 .myHeader img {
@@ -101,19 +100,20 @@ body {
 
 .myContent{
     background:white;
-
+    max-width: 600px;
 }
 
 .myArticles{
     margin-left:5%;
     margin-right:5%;
-;
 }
 
 .brew_article h3{
     /* color:#220901; */
     color:#941b0c;
 }
+
+
 /* LEARN */
 
 .myReadList{
@@ -122,7 +122,7 @@ body {
     background:#941b0c;
     display: flex;
     justify-content: space-around;
-    max-width: 600px;
+
 
 }
 
@@ -140,6 +140,51 @@ body {
 
 .learn_button:focus { 
     outline: none; 
+}
+
+/* BEER */
+
+.myBeers_container{
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap;
+    padding: 0%;   
+}
+
+.beer_small {
+    max-width: 280px;
+    min-width: 280px;
+    max-height: 280px;
+    min-height: 280px;
+}
+
+
+.beer_small img {
+    width:100%; 
+    height:100%; 
+    object-fit:cover;
+}
+
+.beer_small:hover img {
+    filter:brightness(120%);
+}
+
+.beer_horizontal {
+    max-width: 580px;
+    min-width: 580px;
+    max-height: 280px;
+    min-height: 280px;
+
+}
+
+.beer_horizontal img {
+    width:100%; 
+    height:100%; 
+    object-fit:cover;
+}
+
+.beer_horizontal:hover img {
+    filter:brightness(120%);
 }
 
 

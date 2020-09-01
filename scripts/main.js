@@ -1,4 +1,4 @@
-function myFunction() {
+function burgerToggle() {
     var y = document.getElementById("toggle_navbar_id");
 
     if (y.className == "navbar_ul") {

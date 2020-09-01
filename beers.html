@@ -1,69 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
-        <title>Home</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <title>Learn</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="scripts/main.js"></script>
     </head>
     <body>
         
-        <div class="mywrapper">
-            <nav class="navbar">
-                <button class="navbar_button" onclick="myFunction()">&#9776;</button>
-                <ul class="navbar_ul" id="toggle_navbar_id">
-                    <li class="navbar_li"><a href="index.html">HOME</a></li>
-                    <li class="navbar_li"><a href="beers.html">BEERS</a></li>
-                    <li class="navbar_li"><a href="breweries.html">BREWERIES</a></li>
-                    <li class="navbar_li"><a href="learn.html">ARTICLES</a></li>
-                    <li class="navbar_li"><a href="join.html">JOIN</a></li>
-                </ul>
-            </nav>
+    <div class="mywrapper">
+        
+        <nav class="navbar">
+            <button class="navbar_button" onclick="burgerToggle()">&#9776;</button>
+            <ul class="navbar_ul" id="toggle_navbar_id">  
+                <li class="navbar_li"><a href="index.html">HOME</a></li>
+                <li class="navbar_li"><a href="beers.html">BEERS</a></li>
+                <li class="navbar_li"><a href="breweries.html">BREWERIES</a></li>
+                <li class="navbar_li"><a href="learn.html">ARTICLES</a></li>
+                <li class="navbar_li"><a href="join.html">JOIN</a></li>
+            </ul>
+        </nav>
 
             <div class="myHeader">
                 <img src="img/hder_small.jpg"> 
                 <div class="text_center"><h1>BEERS</h1></div>
             </div>
-
-        <div class="myBeers">
-            <p>BEERS<p>
-                <div class="myBeers_container">
-                    <div class="beer_small"><img src="img/MadGiantBeer1.png"> </div>
-                    <div class="beer_large"><img src="img/FrontierBeer3.png"></div>
-                    <div class="beer_vertical"><img src="img/BrewHogsBeer1.png"></div>
-                    <div class="beer_horizontal"><img src="img/HazeldeanBeer1.png"></div>
-                    <div class="beer_small"><img src="img/RedRockBeer1.png"></div>
-                    <div class="beer_large"><img src="img/MadGiantBeer2.png"></div>
-                    <div class="beer_vertical"><img src="img/DraymansBeer1.png"></div>
-                    <div class="beer_small"><img src="img/FrontierBeer2.png"></div>
-                    <div class="beer_horizontal"><img src="img/BrewHogsBeer4.png"></div>
-                    <div class="beer_small"><img src="img/HazeldeanBeer2.png"></div>
-                    <div class="beer_large"><img src="img/FrontierBeer4.png"></div>
-                    <div class="beer_vertical"><img src="img/RedRockBeer2.png"></div>
-                    <div class="beer_horizontal"><img src="img/BrewHogsBeer2.png"></div>
-                    <div class="beer_small"><img src="img/FrontierBeer1.png"></div>
-                    <div class="beer_small"><img src="img/DraymansBeer2.png"></div>
-                </div>
+        <div class="myContent">
+            <div class="myBeers">
+                    <div class="myBeers_container">
+                        <div class="beer_small"><img src="img/MadGiantBeer1.png"></div>
+                        <div class="beer_small"><img src="img/HazeldeanBeer1.png"></div>
+                        <div class="beer_horizontal"><img src="img/BrewHogsBeer1.png"></div>
+                        <div class="beer_small"><img src="img/RedRockBeer1.png"></div>
+                        <div class="beer_small"><img src="img/FrontierBeer1.png"></div>
+                        <div class="beer_horizontal"><img src="img/BrewHogsBeer2.png"></div>
+                        <div class="beer_small"><img src="img/HazeldeanBeer2.png"></div>
+                        <div class="beer_small"><img src="img/MadGiantBeer2.png"></div>
+                        <div class="beer_horizontal"><img src="img/BrewHogsBeer3.png"></div>
+                        <div class="beer_small"><img src="img/RedRockBeer2.png"></div>
+                        <div class="beer_small"><img src="img/FrontierBeer2.png"></div>
+                        <div class="beer_horizontal"><img src="img/BrewHogsBeer4.png"></div>
+                        <div class="beer_small"><img src="img/RedRockBeer3.png"></div>
+                        <div class="beer_small"><img src="img/HazeldeanBeer3.png"></div>
+                        <div class="beer_horizontal"><img src="img/FrontierBeer3.png"></div>
+                        <div class="beer_small"><img src="img/MadGiantBeer3.png"></div>
+                        <div class="beer_small"><img src="img/RedRockBeer4.png"></div>
+                    </div>
+            </div>
         </div>
+            
+        <footer class="footer">
 
-        
-        <footer>
-            <p>Author: Vicus Brits<br>
-            <a href="mailto:vicusbritsmail@gmail.com">vicusbritsmail@gmail.com</a></p>
-        </footer>
+			<div class="logolink">
+                <div >
+                <img src="img/BeerClub.png">
+                </div>
+                <div>
+				<p class="footer-links">
+                    <a href="index.html">HOME</a>
+                    <a href="beers.html">BEERS</a>
+                    <a href="breweries.html">BREWERIES</a>
+                    <a href="learn.html">ARTICLES</a>
+                    <a href="join.html">JOIN</a>
+                </p>
+                </div>	
+			</div>
+
+			<div class="footer_other">
+                <div>
+                    <p>© 2020 Vicus Brits UoL Project</p>
+                </div>
+				<div>
+					<p><i class="fa fa-map-marker"></i>
+					  Centurion Area
+						Gauteng - South Africa</p>
+				</div>
+				<div>
+					<p><i class="fa fa-phone"></i>
+					+27 82-9040718</p>
+				</div>
+				<div>
+					<p></p><i class="fa fa-envelope"></i>
+					<a href="mailto:vicusbritsmail@gmail.com">vicusbritsmail@gmail.com</a></p>
+				</div>
+                <div >
+                    <p>About the Club: On every second Saturday of the month we organise a fun trip to a new craft beer brewery.</p>
+                </div>
+            </div>
+	
+		</footer>
 
 
     </div>
-    <script>
-        function myFunction() {
-        var y = document.getElementById("toggle_navbar_id");
-        if (y.className === "navbar_ul") {
-            y.className += " navbar_hide";
-        } else {
-            y.className = "navbar_ul";
-        }
-        }
-    </script>
     </body>
 </html>
-
-<!-- https://scrimba.com/p/pWqLHa/cBq3PsP -->

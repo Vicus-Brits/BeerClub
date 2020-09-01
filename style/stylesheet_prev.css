@@ -290,57 +290,26 @@ form {
 }
 
 .beer_small img {
-    max-width: 200px;
-    min-width: 200px;
-    max-height: 200px;
-    min-height: 200px;
+    max-width: 280px;
+    min-width: 280px;
+    max-height: 280px;
+    min-height: 280px;
 }
 
-
-
-.beer_large {
-    background: #6a040f;
-    color: white;
-    grid-row: span 2;
-    grid-column: span 2;
-    min-height: 10em;
-}
-
-.beer_large img{
-    max-width: 400px;
-    min-width: 400px;
-    max-height: 400px;
-    min-height: 400px;
-}
-
-
-.beer_vertical {
-    background: #d00000;
-    color: white;
-    grid-row: span 2;
-    min-height: 10em;
-}
-
-.beer_vertical img {
-    max-width: 200px;
-    min-width: 200px;
-    max-height: 400px;
-    min-height: 400px;
-}
 
 .beer_horizontal {
     background: #e85d04;
     color: white;
-    grid-column: span 2;
-    min-height: 5em;
 }
 
 .beer_horizontal img {
-    max-width: 400px;
-    min-width: 400px;
-    max-height: 200px;
-    min-height: 200px;
+    max-width: 580px;
+    min-width: 580px;
+    max-height: 280px;
+    min-height: 280px;
 }
+
+
 .myBreweries_container{
     background:white;
     display: grid;
