@@ -10,6 +10,9 @@ body {
     border:0;
   }
 
+/* .myWrapper{
+    margin:auto; 
+} */
 
 /* NAVIGATION and HEADER*/
 
@@ -55,7 +58,6 @@ body {
     font-size: 20px;
 }
 
-
 .navbar_ul li  a:active {
     background-color: #f6aa1c;
 }
@@ -99,8 +101,11 @@ body {
 /* CONTENT */
 
 .myContent{
-    background:white;
-    max-width: 360px;
+    max-width: 420px;
+    min-width: 400px;
+    min-height: 400px;
+    margin-left:auto; 
+    margin-right:auto; 
 }
 
 .myArticles{
@@ -122,8 +127,6 @@ body {
     background:#941b0c;
     display: flex;
     justify-content: space-around;
-
-
 }
 
 .learn_button{
@@ -143,13 +146,18 @@ body {
 }
 
 /* BEER */
+.myBeers{
+    background:white;
+    min-width: 100%;
+}
 
 .myBeers_container{
+    width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: row;  
     flex-wrap: wrap;
-    padding: 0%;  
-    margin:auto; 
+    padding: 0%; 
 }
 
 .beer_small {
@@ -228,7 +236,7 @@ body {
 
 /* MEDIA QUERIES */
 
-@media only screen and (min-width: 360px){
+@media only screen and (min-width: 600px){
     body {
       background-color: rgb(67, 226, 67);
     }
