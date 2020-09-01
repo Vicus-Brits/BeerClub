@@ -4,7 +4,6 @@
 
 /* All */
 body {
-    background-color: black;
     margin: 0;
     padding: 0;
     border:0;
@@ -15,6 +14,9 @@ body {
 } */
 
 /* NAVIGATION and HEADER*/
+.myTop{
+    background-color:black;
+}
 
 
 .navbar_hide{
@@ -148,7 +150,7 @@ body {
 /* BEER */
 .myBeers{
     background:white;
-    min-width: 100%;
+    width: 100%;
 }
 
 .myBeers_container{
