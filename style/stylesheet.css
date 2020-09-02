@@ -89,13 +89,14 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background: none;
+    width: 350px;
 }
 
 .text_center h1 {
     color:white;
     background: #941b0c;
     font-size: 2em;
-    width: 450px;
+    
     opacity:0.7;
     font-family: 'lobster', cursive;
 }
@@ -195,6 +196,24 @@ body {
 
 .beer_horizontal:hover img {
     filter:brightness(120%);
+}
+
+
+/* BREWERIES */
+
+.brewery_left, .brewery_right {
+    background-color: lightblue;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.brewery_left img, .brewery_right img {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
 }
 
 
