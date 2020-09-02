@@ -71,3 +71,9 @@ function readBoth() {
     }
 
 }
+
+
+function memberreply(){
+    alert('thanks')
+
+}
