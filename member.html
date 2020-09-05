@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body onload="myJokeFunction()">
+        
+        <div class="mywrapper">
+        <div class= "myTop">
+            <nav class="navbar">
+                <button class="navbar_button" onclick="myFunction()">&#9776;</button>
+                <ul class="navbar_ul" id="toggle_navbar_id">
+                    <li class="navbar_li"><a href="index.html">HOME</a></li>
+                    <li class="navbar_li"><a href="beers.html">BEERS</a></li>
+                    <li class="navbar_li"><a href="breweries.html">BREWERIES</a></li>
+                    <li class="navbar_li"><a href="learn.html">ARTICLES</a></li>
+                    <li class="navbar_li"><a href="join.html">JOIN</a></li>
+                </ul>
+            </nav>
+            
+            <div class="myHeader">
+                <img src="img/hder_small.jpg"> 
+                <div class="text_center"><h1>ABOUT</h1></div>
+            </div>
+        </div>
+        <div class="myContent" >
+            <!-- <script>(function(t,e,s,o){var n,c,l;t.SMCX=t.SMCX||[],e.getElementById(o)||(n=e.getElementsByTagName(s),
+            c=n[n.length-1],l=e.createElement(s),l.type="text/javascript",l.async=!0,
+            l.id=o,l.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd7rgBL4OcyTDm8fIJTLRSQM4V_2Beot9cBlEx81Eu3aNCA.js",
+            c.parentNode.insertBefore(l,c))})(window,document,"script","smcx-sdk");
+            </script> -->
+            <!-- <iframe src="https://www.surveymonkey.com/results/SM-WYF7SX8H7/" width="400" height="1000"></iframe> -->
+
+            <p><a href="https://www.surveymonkey.com/results/SM-WYF7SX8H7/">See Results </a></p>
+
+
+        </div>
+
+        <footer class="footer">
+
+			<div class="logolink">
+                <div >
+                <img src="img/BeerClub.png">
+                </div>
+                <div>
+				<p class="footer-links">
+                    <a href="index.html">HOME</a>
+                    <a href="beers.html">BEERS</a>
+                    <a href="breweries.html">BREWERIES</a>
+                    <a href="learn.html">ARTICLES</a>
+                    <a href="join.html">JOIN</a>
+                </p>
+                </div>	
+			</div>
+
+			<div class="footer_other">
+                <div>
+                    <p>© 2020 Vicus Brits UoL Project</p>
+                </div>
+				<div>
+					<p><i class="fa fa-map-marker"></i>
+					  Centurion Area
+						Gauteng - South Africa</p>
+				</div>
+				<div>
+					<p><i class="fa fa-phone"></i>
+					+27 82-9040718</p>
+				</div>
+				<div>
+					<p></p><i class="fa fa-envelope"></i>
+					<a href="mailto:vicusbritsmail@gmail.com">vicusbritsmail@gmail.com</a></p>
+				</div>
+                <div >
+                    <p>About the Club: On every second Saturday of the month we organise a fun trip to a new craft beer brewery.</p>
+                </div>
+            </div>
+	
+		</footer>
+
+    </div>
+    <script>
+        function myFunction() {
+        var y = document.getElementById("toggle_navbar_id");
+        if (y.className === "navbar_ul") {
+            y.className += " navbar_hide";
+        } else {
+            y.className = "navbar_ul";
+        }
+        }
+    </script>
+    </body>
+</html>

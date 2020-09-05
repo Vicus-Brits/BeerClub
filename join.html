@@ -1,5 +1,6 @@
 <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_form -->
 
+<!-- https://www.youtube.com/watch?v=UAu7cMuu0BI -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <title>Join Us</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="scripts/main.js"></script>
 
     </head>
     <body>
@@ -22,7 +24,8 @@
                 <li class="navbar_li"><a href="beers.html">BEERS</a></li>
                 <li class="navbar_li"><a href="breweries.html">BREWERIES</a></li>
                 <li class="navbar_li"><a href="learn.html">ARTICLES</a></li>
-                <li class="navbar_li"><a href="join.html">JOIN</a></li>
+                <li class="navbar_li"><a href="join.html">LOGIN</a></li>
+                <li class="navbar_li member"><a href="join.html">MEMBER AREA</a></li>
             </ul>
         </nav>
         <div class="myHeader">
@@ -31,9 +34,56 @@
         </div>
     </div>
 
-        <div class="myContainer">
+        <span class="myContainer">
 
-            <form id="membershipform" onsubmit="return memberreply()" >
+
+
+
+        <div class="myForms">
+          <button class="button" id="memberYesNo" onclick="memberJoin()">Not a member yet? </button>
+          <div id = "memberResponse">
+            <p id="formComments">Thanks for joining</p> 
+            <p>Please log in with - </p> 
+            <p>User Name: Temp</p>    
+            <p>Password: Temp</p>                  
+          </div>
+
+  
+          <div id="loginWrapper">
+          <form id="loginForm" >
+
+            <h1>LOG IN</h1>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="uname">User Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="uname" name="UserName" placeholder="Your user name..[UoL]">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Password</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="pword" name="password" placeholder="Your password..[UoL]">
+              </div>
+            </div>
+
+            <div class="row">
+              <input type="button" value="Submit" onclick="memberreply()">
+            </div>
+
+          </form>
+        </div>
+
+
+            <div id="joinWrapper">
+            <form id="membershipform">
+
+                <h1>JOIN</h1>
 
                 <div class="row">
                   <div class="col-25">
@@ -55,41 +105,64 @@
 
                 <div class="row">
                     <div class="col-25">
-                      <label for="fname">Email Address</label>
+                      <label for="email">Email Address</label>
                     </div>
                     <div class="col-75">
-                      <input type="text" id="fname" name="Email" placeholder="Your email address..">
+                      <input type="text" id="email" name="Email" placeholder="Your email address..">
                     </div>
                 </div>
 
                 <div class="row">
-                  <div class="col-25">
-                    <label for="subject">Message</label>
-                  </div>
-                  <div class="col-75">
-                    <textarea id="subject" name="Message" placeholder="Write something.." style="height:200px"></textarea>
-                  </div>
+                  <input type="button" value="Submit" onclick="memberreply()">
                 </div>
-                <div class="row">
-                  <input type="submit" value="Submit">
-                </div>
+
               </form>
+            </div>
         </div>
 
 
-        <footer>
-            <p>Author: Vicus Brits<br>
-            <a href="mailto:vicusbritsmail@gmail.com">vicusbritsmail@gmail.com</a></p>
-        </footer>
+        <footer class="footer">
 
+			<div class="logolink">
+                <div >
+                <img src="img/BeerClub.png">
+                </div>
+                <div>
+				<p class="footer-links">
+                    <a href="index.html">HOME</a>
+                    <a href="beers.html">BEERS</a>
+                    <a href="breweries.html">BREWERIES</a>
+                    <a href="learn.html">ARTICLES</a>
+                    <a href="join.html">JOIN</a>
+                </p>
+                </div>	
+			</div>
+
+			<div class="footer_other">
+                <div>
+                    <p>© 2020 Vicus Brits UoL Project</p>
+                </div>
+				<div>
+					<p><i class="fa fa-map-marker"></i>
+					  Centurion Area
+						Gauteng - South Africa</p>
+				</div>
+				<div>
+					<p><i class="fa fa-phone"></i>
+					+27 82-9040718</p>
+				</div>
+				<div>
+					<p></p><i class="fa fa-envelope"></i>
+					<a href="mailto:vicusbritsmail@gmail.com">vicusbritsmail@gmail.com</a></p>
+				</div>
+                <div >
+                    <p>About the Club: On every second Saturday of the month we organise a fun trip to a new craft beer brewery.</p>
+                </div>
+            </div>
+	
+		</footer>
 
     </div>
 
-<div>
-    <script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd7rgBL4OcyTDm8fIJTLRSQPHwpDn9eAkUX8oNjN69TDG.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script><a style="font: 12px Helvetica, sans-serif; color: #999; text-decoration: none;" href=www.surveymonkey.com> Create your own user feedback survey </a>
-</div>
-
-
-<p><a href="https://www.surveymonkey.com/results/SM-WYF7SX8H7/">See Results </a></p>
     </body>
 </html>

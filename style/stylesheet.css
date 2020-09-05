@@ -37,6 +37,27 @@ body {
     outline: none; 
 }
 
+.member{
+    display: none;
+}
+
+.login_button{
+    background-color: transparent;
+    color:white;
+    border:none;
+    border-block-style: none;
+    font-size: 1em;
+    position: fixed;
+    z-index:1;
+    right: 0.5em;
+    top: 0.5em;
+}
+
+.login_button:focus { 
+    outline: none; 
+}
+
+
 
 .navbar_ul{
     display: flex;
@@ -234,18 +255,21 @@ body {
     display: inline-block;
   }
   
-  input[type=submit] {
-    background-color: #4CAF50;
+  input[type=button] {
+    background-color: #f6aa1c;
+    width: 100%;
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
     float: right;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin-top: 5px;
   }
   
-  input[type=submit]:hover {
-    background-color: #45a049;
+  input[type=button]:hover {
+    background-color: black;
   }
   
   .container {
@@ -273,6 +297,68 @@ body {
     clear: both;
   }
   
+  #memberResponse{
+      display: none;
+  }
+
+  #formComments{
+      margin: 10px;
+  }
+
+  .myForms{
+      margin: 10px;
+  }
+
+
+  .button{
+    background-color: #f6aa1c;
+    width: 100%;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+
+.button:hover {
+    background-color: black;
+  }
+
+
+  /* https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip */
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  #joinWrapper{
+      display: none;
+  }
+
+
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .col-25, .col-75, input[type=submit] {

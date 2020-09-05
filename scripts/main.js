@@ -72,8 +72,36 @@ function readBoth() {
 
 }
 
+// https://www.javascripttutorial.net/javascript-dom/javascript-form/
+
+var memberLoggedIn = "No";
 
 function memberreply(){
-    alert('thanks')
+    // alert("Status: "+memberLoggedIn)
+    fname = document.getElementById("fname").value;
+    lname = document.getElementById("lname").value;
+    email = document.getElementById("email").value;
 
+    if(!fname || !lname || !email || !email){
+
+    document.getElementById("formComments").innerHTML = "Please populate all fields";
+    document.getElementById("memberResponse").style.display = "block";
+    document.getElementById("formComments").style.background = "red";
+    
+    } else {
+    document.getElementById("formComments").innerHTML = "Thanks for signing up "+ fname + "!";
+    document.getElementById("memberResponse").style.display = "block";
+    document.getElementById("formComments").style.fontSize = "2em";
+    document.getElementById("formComments").style.background = "white";
+    document.getElementById("membershipform").style.display = "none";
+    document.getElementById("loginWrapper").style.display = "block";
+    memberLoggedIn = "Yes"
+    }
+    // alert("Status: "+memberLoggedIn)
+}
+
+function memberJoin(){
+    document.getElementById("joinWrapper").style.display = "block";
+    document.getElementById("memberYesNo").style.display = "none";
+    document.getElementById("loginWrapper").style.display = "none";
 }
