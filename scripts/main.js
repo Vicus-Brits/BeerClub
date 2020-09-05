@@ -105,3 +105,9 @@ function memberJoin(){
     document.getElementById("memberYesNo").style.display = "none";
     document.getElementById("loginWrapper").style.display = "none";
 }
+
+
+function memberLogin(){
+    alert('Hello daar')
+    window.location.href = "member.html";
+}
