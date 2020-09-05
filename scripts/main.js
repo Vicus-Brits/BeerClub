@@ -111,3 +111,6 @@ function memberLogin(){
     alert('Hello daar')
     window.location.href = "member.html";
 }
+
+// LOGIN SYSTEM
+// https://www.youtube.com/watch?v=UAu7cMuu0BI
