@@ -105,12 +105,40 @@ function memberJoin(){
     document.getElementById("memberYesNo").style.display = "none";
     document.getElementById("loginWrapper").style.display = "none";
 }
-
-
+// These passwords are not secure and needs to move to a database
+// The page is also not secure as you can navigate to the url 
+var objPeople = [
+    {
+    username:  "UoL", 
+    password:  "UoL"
+    }, 
+    {
+        username:  "Temp", 
+        password:  "Temp"
+    }, 
+    {
+        username:  "Vicus", 
+        password:  "123"
+    }
+]
 function memberLogin(){
-    alert('Hello daar')
-    window.location.href = "member.html";
-}
-
-// LOGIN SYSTEM
+    // LOGIN SYSTEM
 // https://www.youtube.com/watch?v=UAu7cMuu0BI
+
+    var username = document.getElementById("uname").value
+    var password = document.getElementById("pword").value
+
+    for(i = 0; i< objPeople.length; i++) {
+        if (username == objPeople[i].username && password  == objPeople[i].password) {
+           console.log ("logged in") 
+           alert("logged in")
+           window.location.href = "member.html";
+           return
+        } 
+    }
+    document.getElementById("formComments").innerHTML = "That is not the correct User Name and Password";
+    document.getElementById("memberResponse").style.display = "block";
+
+}
+    
+

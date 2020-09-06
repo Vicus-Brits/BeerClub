@@ -3,6 +3,17 @@
 /* Access : https://www.smashingmagazine.com/2013/07/simple-responsive-images-with-css-background-images/ */
 
 /* All */
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
 body {
     margin: 0;
     padding: 0;
