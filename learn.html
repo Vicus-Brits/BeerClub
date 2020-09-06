@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
-        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-        <title>Articles</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="scripts/main.js"></script>
-    </head>
-    <body>
-        
-    <div class="mywrapper">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Articles</title>
+    <!-- imported stylesheets -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- custom code -->
+    <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
+    <script src="scripts/main.js"></script>
+</head>
+
+<body>
+<div class="myWrapper">
+
     <div class= "myTop">
         <nav class="navbar">
             <button class="navbar_button" onclick="burgerToggle()">&#9776;</button>
@@ -20,20 +24,33 @@
                 <li class="navbar_li"><a href="breweries.html">BREWERIES</a></li>
                 <li class="navbar_li"><a href="learn.html">ARTICLES</a></li>
                 <li class="navbar_li"><a href="join.html">JOIN</a></li>
+                <li class="navbar_li"><a href="member.html">MEMBER AREA</a></li>
             </ul>
         </nav>
         <div class="myHeader">
             <img src="img/hder_small.jpg"> 
-            <div class="text_center"><h1> A R T I C L E S</h1></div>
+            <div class="text_center"><h1>A R T I C L E S</h1></div>
         </div>
     </div>
+
+
         <div class="myContent">
 
-            <div class="myReadList"> `
+            <!-- <div class="myReadList"> `
                 <div><button class="learn_button" onclick="readBeer()" >BEERS</button></div>
                 <div><button class="learn_button" onclick="readBrews()" >BREWS</button></div>
                 <div><button class="learn_button" onclick="readBoth()" >BOTH</button></div>
-            </div>
+            </div> -->
+
+            <nav class="navbar">
+                <ul class="navbar_ul">  
+                    <li class="navbar_li"><a onclick="readBeer()">BEERS</a></li>
+                    <li class="navbar_li"><a onclick="readBrews()">BREWS</a></li>
+                    <li class="navbar_li"><a onclick="readBoth()">BOTH</a></li>
+                </ul>
+            </nav>
+
+
 
             <div class="myArticles"> 
                 <div class="beer_article">
@@ -86,53 +103,36 @@
             </div>
         </div>
         <br>
-		<footer class="footer">
 
-			<div class="logolink">
-                <div >
-                <img src="img/BeerClub.png">
-                </div>
-                <div>
-				<p class="footer-links">
+
+        <footer class="footer">
+            <div class="logolink">
+                <div ><img src="img/BeerClub.png"></div>
+                <div><p class="footer-links">
                     <a href="index.html">HOME</a>
                     <a href="beers.html">BEERS</a>
                     <a href="breweries.html">BREWERIES</a>
                     <a href="learn.html">ARTICLES</a>
                     <a href="join.html">JOIN</a>
-                </p>
-                </div>	
-			</div>
-
-			<div class="footer_other">
-                <div>
-                    <p>© 2020 Vicus Brits UoL Project</p>
-                </div>
-				<div>
-					<p><i class="fa fa-map-marker"></i>
-					  Centurion Area
-						Gauteng - South Africa</p>
-				</div>
-				<div>
-					<p><i class="fa fa-phone"></i>
-					+27 82-9040718</p>
-				</div>
-				<div>
-					<p></p><i class="fa fa-envelope"></i>
-					<a href="mailto:vicusbritsmail@gmail.com">vicusbritsmail@gmail.com</a></p>
-				</div>
-                <div >
-                    <p>About the Club: On every second Saturday of the month we organise a fun trip to a new craft beer brewery.</p>
-                </div>
+                </p></div>	
             </div>
-	
-		</footer>
-
-
+    
+            <div class="footer_other">
+                <div> <p>© 2020 Vicus Brits UoL Project</p> </div>
+                <div> <p><i class="fa fa-map-marker"></i>
+                        Centurion Area
+                        Gauteng - South Africa</p>
+                </div>
+                <div> <p><i class="fa fa-phone"></i>
+                    +27 82-9040718</p>
+                </div>
+                <div> <p></p><i class="fa fa-envelope"></i>
+                    <a href="mailto:vicusbritsmail@gmail.com">vicusbritsmail@gmail.com</a></p>
+                </div>
+                <div >  <p>About the Club: On every second Saturday of the month we organise a fun trip to a new craft beer brewery.</p> </div>
+            </div>
+        </footer>
     </div>
     </body>
-</html>
-
-
-<!-- create javascript interaction for the type of links you wan to see -->
-
-<!-- https://www.beerguild.co.uk/events/ -->
+    </html>
+    
