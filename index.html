@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="description" content="Beer Club is a group of Beer Nerds visiting a different brewery every month" />
+<meta name="keywords" content="beer club, breweries, beer"/>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,23 +9,29 @@
     <!-- imported stylesheets -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- imported javascript -->
+    <!-- jquery components used to make the call to the external joke API -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- custom code -->
     <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
     <script src="scripts/main.js"></script>
 </head>
 
+<!-- The joke at the bottom of the page (class="myjoke") is populated with javascript from scripts\main.js It calls an external API -->
 <body onload="myJokeFunction()">
 
+    <!-- Navigation code is replicated on each page
+    TODO: Dynamically generate navigation using a web framework like handlebars -->
     <div class= "myTop">
         <nav class="navbar">
             <button class="navbar_button" onclick="burgerToggle()">&#9776;</button>
             <ul class="navbar_ul" id="toggle_navbar_id">  
-                <li class="navbar_li"><a href="index.html">HOME</a></li>
-                <li class="navbar_li"><a href="beers.html">BEERS</a></li>
-                <li class="navbar_li"><a href="breweries.html">BREWERIES</a></li>
-                <li class="navbar_li"><a href="learn.html">ARTICLES</a></li>
-                <li class="navbar_li"><a href="join.html">JOIN</a></li>
-                <li class="navbar_li"><a href="member.html">MEMBER AREA</a></li>
+                <li class="navbar_li"><a href="index.html" title="The home page explains the purpose of the club">HOME</a></li>
+                <li class="navbar_li"><a href="beers.html" title="Images of different beers whick link through to the breweries which make them">BEERS</a></li>
+                <li class="navbar_li"><a href="breweries.html" title="a Short description of breweries we plan to visit, with brewery contact details">BREWERIES</a></li>
+                <li class="navbar_li"><a href="learn.html" title="Links to different articles where you can learn about beer and brewing" >ARTICLES</a></li>
+                <li class="navbar_li"><a href="join.html" title="Web form which you can complete to join the club">JOIN</a></li>
+                <li class="navbar_li"><a href="member.html" title="Member area where a survey is used to determine which brewery to visit next">MEMBER AREA</a></li>
             </ul>
         </nav>
         <div class="myHeader">
@@ -33,40 +41,42 @@
     </div>
 
         <div class="myContent" >
-            <div class="myContainer"> 
-               
-
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                    It has survived not only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged.</p>    
-   
-       
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
-                        It has roots in a piece of classical Latin literature from 45 BC, 
-                        making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, 
-                        looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, 
-                        and going through the cites of the word in classical literature, 
-                        discovered the undoubtable source.</p>
-  
+            <br>
+            <article>
+                <h1>Welcome Beer Club</h1>    
+                <br>
+                <h2>About the club</h2>
+                <p>Beer club has its origins in 2020 COVID 19 Pandemic, 
+                    a dark time in South-Africa's history where the population could not go out to have a beer and worse.. was also prohibted from buying beer.</p>
+                <p> Couple that calamatity with one of the founding members needing to build a club website for academic purposes and you have the birth of Beer Club.</p>
+                <p> Beer Club is about celebrating drinking and brewing beer for <em>'academic purposes'</em>..</p>
                     <br>
-
-                    <div class="jokecontainer">        
-                    <p class="myjoke"> </p>
-                    <button class="joke_button"  onclick="myJokeFunction()" >Tell me another one!</button>
-                    </div>
-
-
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a 
-                        page when looking at its layout.
-                    </p> 
-     
-            </div>
-    
-            
+                <h2>What we Do</h2>
+                <p> Beer Club meets every second Saturday of the month to visit one of the craft breweries nearby (nearby Centurion, South Africa that is) 
+                    where we soak up the vibe,(and the beer), and perhaps buy some stock for the month.</p>
+                <p> The main purpose of this website is to drive the selection of which brewery to visit next.</p>
+                <p> Next year we plan to start home brewing </p>
+                <br>
+                <p> You can sharpen up on your knowledge of beer and beer brewing on our <a href="learn.html">Articles page </a></p>
+                <br> 
+                <p> Selection of the next brewery to visit is done by looking for some beer-bottle-inspiration on the <a href="beers.html"> beers page</a> or by direct brewery selection on the<a href="breweries.html"> breweries page</a></p>
+                <p> In order to vote, you need to <a href="join.html">log in first</a> </li> </p>
+                <p> Security on the website is not very tight ( dont use you banking password ), but logging in will take you to our survey.</p>
+                <p> New members are immediately taken to the survey page.</p>
+                <p> If you live nearby, and like to talk beer and I.T. please join us for relaxed saturday afternoon</p>
+                <br>
+                </article>
+            <p> In the interim, hit the tell me another one button below for some comic relief</p>
+            <br>
+            <!-- The joke is populated with javascript from scripts\main.js It calls an external API -->
+            <p class="myjoke"> </p>
+            <br>
+            <button class = "joke_button" onclick="myJokeFunction()"> Tell me another one! </button>
+            <br>
         </div> 
-
+     
+        <!-- Footer code is replicated on each page
+        TODO: Dynamically generate navigation using a web framework like handlebars -->
         <footer class="footer">
             <div class="logolink">
                 <div ><img src="img/BeerClub.png"></div>
@@ -96,37 +106,6 @@
         </footer>
 
 
-
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-        <script>
-            function myFunction() {
-        
-            alert("Hello")
-        
-            var y = document.getElementById("toggle_navbar_id");
-            if (y.className === "navbar_ul") {
-                y.className += " navbar_hide";
-            } else {
-                y.className = "navbar_ul";
-            }
-        }
-        // http://zetcode.com/javascript/jsonurl/
-        
-        function myJokeFunction () {
-        
-            $.getJSON('https://sv443.net/jokeapi/v2/joke/Programming?type=single', function(joke) {
-        
-                var text = `<br>${joke.joke}<br>`
-        
-                $(".myjoke").html(text);
-        
-            });
-        }
-        
-        </script>
-
-        
     </body>
     </html>
     

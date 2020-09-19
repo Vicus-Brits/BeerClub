@@ -12,6 +12,11 @@
     background: transparent;
 }
 
+h1{
+    font-size:1.5em;
+    color: #941b0c
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -145,11 +150,21 @@ button {
 /* CONTENT */
 
 .myContent{
-    min-height: 400px;
-    margin-left:auto; 
-    margin-right:auto; 
+    margin-left:5%; 
+    margin-right:5%; 
+    margin-bottom:5%; 
 }
 
+.myjoke{
+    background-color: blanchedalmond;
+    text-align: center;
+}
+.joke_button{
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+    vertical-align: center;
+}
 
 /* LEARN */
 
@@ -518,147 +533,147 @@ margin-top: 0;
 
 .BrewHogsBeer1 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../img/BrewHogsBeer1.png);
+    url(../img/BrewHogsBeer1.jpg);
     background-repeat: no-repeat;
     background-position: left center;
 }
 
 .BrewHogsBeer2 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../img/BrewHogsBeer2.png);
+    url(../img/BrewHogsBeer2.jpg);
     background-repeat: no-repeat;
     background-position: left center;
 }
 
 .BrewHogsBeer3 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../img/BrewHogsBeer3.png);
+    url(../img/BrewHogsBeer3.jpg);
     background-repeat: no-repeat;
     background-position: left center;
 }
 
 .BrewHogsBeer4 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../img/BrewHogsBeer4.png);
+    url(../img/BrewHogsBeer4.jpg);
     background-repeat: no-repeat;
     background-position: left center;
 }
 
 .DraymansBeer1 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../img/DraymansBeer1.png);
+    url(../img/DraymansBeer1.jpg);
     background-repeat: no-repeat;
     background-position: center right;
 }
 
 .DraymansBeer2 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../img/DraymansBeer2.png);
+    url(../img/DraymansBeer2.jpg);
     background-repeat: no-repeat;
     background-position: left bottom;
 }
 
 .DraymansBeer3 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../img/DraymansBeer3.png);
+    url(../img/DraymansBeer3.jpg);
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 .FrontierBeer1 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../img/FrontierBeer1.png);
+    url(../img/FrontierBeer1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 .FrontierBeer2 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../img/FrontierBeer2.png);
+    url(../img/FrontierBeer2.jpg);
     background-repeat: no-repeat;
     background-position: bottom center;
 }
 
 .FrontierBeer3 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../img/FrontierBeer3.png);
+    url(../img/FrontierBeer3.jpg);
     background-repeat: no-repeat;
     background-position: bottom left;
 }
 
 .FrontierBeer4 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../img/FrontierBeer4.png);
+    url(../img/FrontierBeer4.jpg);
     background-repeat: no-repeat;
     background-position: center right;
 }
 
 .HazeldeanBeer1 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../img/HazeldeanBeer1.png);
+    url(../img/HazeldeanBeer1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 .HazeldeanBeer2 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../img/HazeldeanBeer2.png);
+    url(../img/HazeldeanBeer2.jpg);
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 .HazeldeanBeer3 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../img/HazeldeanBeer3.png);
+    url(../img/HazeldeanBeer3.jpg);
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 .MadGiantBeer1 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../img/MadGiantBeer1.png);
+    url(../img/MadGiantBeer1.jpg);
     background-repeat: no-repeat;
     background-position: bottom right;
 }
 
 .MadGiantBeer2 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../img/MadGiantBeer2.png);
+    url(../img/MadGiantBeer2.jpg);
     background-repeat: no-repeat;
     background-position: top left;
 }
 
 .MadGiantBeer3 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../img/MadGiantBeer3.png);
+    url(../img/MadGiantBeer3.jpg);
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 .RedRockBeer1 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../img/RedRockBeer1.png);
+    url(../img/RedRockBeer1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 .RedRockBeer2 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../img/RedRockBeer2.png);
+    url(../img/RedRockBeer2.jpg);
     background-repeat: no-repeat;
     background-position: bottom center;
 }
 
 .RedRockBeer3 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../img/RedRockBeer3.png);
+    url(../img/RedRockBeer3.jpg);
     background-repeat: no-repeat;
     background-position: bottom left;
 }
 
 .RedRockBeer4 {
 	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
-    url(../img/RedRockBeer4.png);
+    url(../img/RedRockBeer4.jpg);
     background-repeat: no-repeat;
     background-position: center right;
 }

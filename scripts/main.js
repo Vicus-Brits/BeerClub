@@ -11,6 +11,19 @@ function burgerToggle() {
 }
 
 
+function myJokeFunction () {
+    // http://zetcode.com/javascript/jsonurl/      
+    $.getJSON('https://sv443.net/jokeapi/v2/joke/Programming?type=single', function(joke) {
+
+        var text = `<br>${joke.joke}<br>`
+
+        $(".myjoke").html(text);
+
+    });
+}
+
+
+
 function readBeer() {
 
     var myBrews = document.querySelectorAll('.brew_article'),
