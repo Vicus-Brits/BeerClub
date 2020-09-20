@@ -13,8 +13,7 @@ function burgerToggle() {
 }
 
 // Call external API for a fresh joke (index.html)
-function myJokeFunction () {
-    // http://zetcode.com/javascript/jsonurl/      
+function myJokeFunction () {    
     $.getJSON('https://sv443.net/jokeapi/v2/joke/Programming?type=single', function(joke) {
         var text = `<br>${joke.joke}<br>`
         $(".myjoke").html(text);

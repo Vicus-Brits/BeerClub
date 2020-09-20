@@ -39,33 +39,36 @@ We are also asking google not to send the robots here, it is a private space aft
             <div class="text_center"><h1>H O M E</h1></div>
         </div>
     </div>
-
+    <div class ="memberWrapper">
     <div class="myContent" >
-
-        <h1>What is happening? </h1>
-        <p> Our next brewery visit is set for <time datetime="2020-10-12 16:00"> Saturday 12 Oct @ 16:00. </time>.</p>
-        <br>
-        <h3>The votes so far: </h3>
-        <p><a href="https://www.surveymonkey.com/results/SM-WYF7SX8H7/" target="_blank">See Results</a><i>(opens in a second browser window)</i></p>
-        <br>
-        
-        <h3>It is your duty and privilige as member to vote on which brewery we visit next.</h3>
-        <p>As per usual, we will use a surveymonkey to listen for the voice of the people.</p>
-        <p>Please cast your vote here..</p>
-        <br> <!-- Survey Monkey call -->
-        <script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd7rgBL4OcyTDm8fIJTLRSQMgDNSQ_2B42WtzGFxv_2F9jput.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script><a style="font: 12px Helvetica, sans-serif; color: #999; text-decoration: none;" href=www.surveymonkey.com> Create your own user feedback survey </a>
-        <br>
-
-    <!-- log out removes the Membership navigation link  -->
+        <div class="innerMember">
+            <h1>What is happening? </h1>
+            <br>
+            <p> Our next brewery visit is set for <time datetime="2020-10-12 16:00"> Saturday 12 Oct @ 16:00. </time>.</p>
+            <br>
+            <h3>The votes so far: </h3>
+            <p><a href="https://www.surveymonkey.com/results/SM-WYF7SX8H7/" target="_blank">See Results</a><i>(opens in a second browser window)</i></p>
+            <br>
+            
+            <h3>It is your duty and privilige as member to vote on which brewery we visit next.</h3>
+            <p>As per usual, we will use a surveymonkey to listen for the voice of the people.</p>
+            <p>Please cast your vote here..</p>
+            <br> <!-- Survey Monkey call -->
+            <script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd7rgBL4OcyTDm8fIJTLRSQMgDNSQ_2B42WtzGFxv_2F9jput.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script><a style="font: 12px Helvetica, sans-serif; color: #999; text-decoration: none;" href=www.surveymonkey.com> Create your own user feedback survey </a>
+            <br>
+                
+            <!-- log out removes the Membership navigation link  -->
+            
+            <div class="row" id = "logOut">
+                <input type="button" value="Log Out"  onclick="memberLogOut()">
+            </div>
+        </div> 
     </div>
-    <div class="row" id = "logOut">
-        <input type="button" value="Log Out"  onclick="memberLogOut()">
     </div>
-
     <footer class="footer">
+        <div class="footer_img"><img src="img/BeerClub.png" alt="Jug of Beer logo"></div>
         <div class="logolink">
-            <div ><img src="img/BeerClub.png" alt="Jug of Beer logo"></div>
-            <div><p class="footer-links">
+            <div><p class="footer_links">
                 <a href="index.html">HOME</a>
                 <a href="beers.html">BEERS</a>
                 <a href="breweries.html">BREWERIES</a>
@@ -76,17 +79,21 @@ We are also asking google not to send the robots here, it is a private space aft
 
         <div class="footer_other">
             <div> <p>© 2020 Vicus Brits UoL Project</p> </div>
+
             <div> <p><i class="fa fa-map-marker"></i>
                     Centurion Area
                     Gauteng - South Africa</p>
             </div>
+
             <div> <p><i class="fa fa-phone"></i>
                 +27 82-9040718</p>
             </div>
-            <div> <p></p><i class="fa fa-envelope"></i>
-                <a href="mailto:vicusbritsmail@gmail.com">vicusbritsmail@gmail.com</a></p>
+            
+            <div> 
+                <p><i class="fa fa-envelope"></i><a href="mailto:vicusbritsmail@gmail.com">vicusbritsmail@gmail.com</a></p>
             </div>
-            <div >  <p>About the Club: On every second Saturday of the month we organise a fun trip to a new craft beer brewery.</p> </div>
+
+            <div ><p>About the Club: On every second Saturday of the month we organise a fun trip to a new craft beer brewery.</p></div>
         </div>
     </footer>
 </body>
