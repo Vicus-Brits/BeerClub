@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta name="description" content="Beer Club is a group of Beer Nerds visiting a different brewery every month" />
-<meta name="keywords" content="beer club, breweries, beer"/>
 
 <head>
+    <!-- https://ahrefs.com/blog/seo-meta-tags/ -->
+    <title>Beer Club Home</title>
+    <meta name="description" content="Beer Club is a group of Beer Nerds visiting a different brewery every month" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
+    <meta charset="utf-8">
+    
     <!-- imported stylesheets -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -17,8 +19,8 @@
     <script src="scripts/main.js"></script>
 </head>
 
-<!-- The joke at the bottom of the page (class="myjoke") is populated with javascript from scripts\main.js It calls an external API -->
-<body onload="myJokeFunction()">
+<!-- The joke at the bottom of the page (class="myjoke") is populated with javascript from scripts\main.js via an external API call-->
+<body onload="myJokeFunction(); checkLogIn()">
 
     <!-- Navigation code is replicated on each page
     TODO: Dynamically generate navigation using a web framework like handlebars -->
@@ -31,27 +33,27 @@
                 <li class="navbar_li"><a href="breweries.html" title="a Short description of breweries we plan to visit, with brewery contact details">BREWERIES</a></li>
                 <li class="navbar_li"><a href="learn.html" title="Links to different articles where you can learn about beer and brewing" >ARTICLES</a></li>
                 <li class="navbar_li"><a href="join.html" title="Web form which you can complete to join the club">JOIN</a></li>
-                <li class="navbar_li"><a href="member.html" title="Member area where a survey is used to determine which brewery to visit next">MEMBER AREA</a></li>
+                <li class="navbar_li" id = "memberarea_li" ><a href="member.html" title="Member area where a survey is used to determine which brewery to visit next">MEMBER AREA</a></li>
             </ul>
         </nav>
         <div class="myHeader">
-            <img src="img/hder_small.jpg"> 
+            <img src="img/hder_small.jpg" alt="Website header showing various craft beers on a shelf"> 
             <div class="text_center"><h1>H O M E</h1></div>
         </div>
     </div>
 
         <div class="myContent" >
             <br>
+            <h1>Welcome Beer Club</h1> 
             <article>
-                <h1>Welcome Beer Club</h1>    
                 <br>
                 <h2>About the club</h2>
-                <p>Beer club has its origins in 2020 COVID 19 Pandemic, 
+                <p>Beer Club has its origins in the 2020 COVID 19 Pandemic, 
                     a dark time in South-Africa's history where the population could not go out to have a beer and worse.. was also prohibted from buying beer.</p>
                 <p> Couple that calamatity with one of the founding members needing to build a club website for academic purposes and you have the birth of Beer Club.</p>
                 <p> Beer Club is about celebrating drinking and brewing beer for <em>'academic purposes'</em>..</p>
                     <br>
-                <h2>What we Do</h2>
+                <h2>What we do</h2>
                 <p> Beer Club meets every second Saturday of the month to visit one of the craft breweries nearby (nearby Centurion, South Africa that is) 
                     where we soak up the vibe,(and the beer), and perhaps buy some stock for the month.</p>
                 <p> The main purpose of this website is to drive the selection of which brewery to visit next.</p>
@@ -60,12 +62,12 @@
                 <p> You can sharpen up on your knowledge of beer and beer brewing on our <a href="learn.html">Articles page </a></p>
                 <br> 
                 <p> Selection of the next brewery to visit is done by looking for some beer-bottle-inspiration on the <a href="beers.html"> beers page</a> or by direct brewery selection on the<a href="breweries.html"> breweries page</a></p>
-                <p> In order to vote, you need to <a href="join.html">log in first</a> </li> </p>
+                <p> In order to vote, you need to <a href="join.html">log in first</a> </p>
                 <p> Security on the website is not very tight ( dont use you banking password ), but logging in will take you to our survey.</p>
                 <p> New members are immediately taken to the survey page.</p>
                 <p> If you live nearby, and like to talk beer and I.T. please join us for relaxed saturday afternoon</p>
                 <br>
-                </article>
+            </article>
             <p> In the interim, hit the tell me another one button below for some comic relief</p>
             <br>
             <!-- The joke is populated with javascript from scripts\main.js It calls an external API -->
@@ -79,7 +81,7 @@
         TODO: Dynamically generate navigation using a web framework like handlebars -->
         <footer class="footer">
             <div class="logolink">
-                <div ><img src="img/BeerClub.png"></div>
+                <div ><img src="img/BeerClub.png" alt="Jug of Beer logo"></div>
                 <div><p class="footer-links">
                     <a href="index.html">HOME</a>
                     <a href="beers.html">BEERS</a>
@@ -99,15 +101,13 @@
                     +27 82-9040718</p>
                 </div>
                 <div> <p></p><i class="fa fa-envelope"></i>
-                    <a href="mailto:vicusbritsmail@gmail.com">vicusbritsmail@gmail.com</a></p>
+                    <p><a href="mailto:vicusbritsmail@gmail.com">vicusbritsmail@gmail.com</a></p>
                 </div>
                 <div >  <p>About the Club: On every second Saturday of the month we organise a fun trip to a new craft beer brewery.</p> </div>
             </div>
         </footer>
-
-
     </body>
-    </html>
+</html>
     
 
 

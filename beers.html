@@ -2,8 +2,11 @@
 <html lang="en">
 
 <head>
+    <!-- https://ahrefs.com/blog/seo-meta-tags/ -->
+    <title>Beer Club Beers</title>
+    <meta name="description" content="Beer Club is a group of Beer Nerds visiting a different brewery every month" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Beers</title>
+    <meta charset="utf-8">
     <!-- imported stylesheets -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -12,10 +15,8 @@
     <script src="scripts/main.js"></script>
 </head>
 
-<body>
-
+<body onload="checkLogIn()">
 <!--This page is created by following this turorial: https://xopixel.com/responsive-animated-image-grid-html5-css3/ -->
-
   <div class= "myTop">
       <nav class="navbar">
           <button class="navbar_button" onclick="burgerToggle()">&#9776;</button>
@@ -25,11 +26,11 @@
               <li class="navbar_li"><a href="breweries.html" title="a Short description of breweries we plan to visit, with brewery contact details">BREWERIES</a></li>
               <li class="navbar_li"><a href="learn.html" title="Links to different articles where you can learn about beer and brewing" >ARTICLES</a></li>
               <li class="navbar_li"><a href="join.html" title="Web form which you can complete to join the club">JOIN</a></li>
-              <li class="navbar_li"><a href="member.html" title="Member area where a survey is used to determine which brewery to visit next">MEMBER AREA</a></li>
-          </ul>
+              <li class="navbar_li" id = "memberarea_li" ><a href="member.html" title="Member area where a survey is used to determine which brewery to visit next">MEMBER AREA</a></li>
+            </ul>
       </nav>
       <div class="myHeader">
-          <img src="img/hder_small.jpg"> 
+        <img src="img/hder_small.jpg" alt="Website header showing various craft beers on a shelf"> 
           <div class="text_center"><h1>H O M E</h1></div>
       </div>
   </div>
@@ -39,9 +40,9 @@
       <!-- images start -->
       <div class="xop-section">
       <ul class="xop-grid">
-
+        <!-- https://www.w3.org/WAI/GL/wiki/Using_aria-label_to_provide_labels_for_objects -->
         <li>
-            <div class="img-box MadGiantBeer1">
+            <div class="img-box MadGiantBeer1" role="navigation" aria-label="Link through to Mad Giant Brewery">
                 <a href="breweries.html#MadGiant">
               <div class="xop-info">
                 <h3>Mad Giant</h3>
@@ -51,7 +52,7 @@
         </li>
 
         <li>
-            <div class="img-box FrontierBeer1">
+            <div class="img-box FrontierBeer1" role="navigation" aria-label="Link through to Frontier Brewery">
               <a href="breweries.html#Frontier">
               <div class="xop-info">
                 <h3>Frontier</h3>
@@ -61,7 +62,7 @@
           </li>
 
           <li>
-            <div class="img-box DraymansBeer1">
+            <div class="img-box DraymansBeer1" role="navigation" aria-label="Link through to Draymans Brewery">
                 <a href="breweries.html#BrewHogs">
               <div class="xop-info">
                 <h3>Drayman's</h3>
@@ -71,7 +72,7 @@
           </li>
 
         <li>
-          <div class="img-box HazeldeanBeer1">
+          <div class="img-box HazeldeanBeer1" role="navigation" aria-label="Link through to Hazeldean Brewery">
               <a href="breweries.html#Hazeldean">
             <div class="xop-info">
               <h3>Hazeldean</h3>
@@ -81,7 +82,7 @@
         </li>
 
         <li>
-          <div class="img-box BrewHogsBeer1">
+          <div class="img-box BrewHogsBeer1" role="navigation" aria-label="Link through to Brew Hogs Brewery">
             <a href="breweries.html#BrewHogs">
             <div class="xop-info">
               <h3>Brew Hogs</h3>
@@ -91,7 +92,7 @@
         </li>
 
         <li>
-          <div class="img-box RedRockBeer1">
+          <div class="img-box RedRockBeer1" role="navigation" aria-label="Link through to Red Rock Brewery">
             <a href="breweries.html#RedRock">
             <div class="xop-info">
               <h3>Red Rock</h3>
@@ -102,7 +103,7 @@
 
 
         <li>
-          <div class="img-box FrontierBeer2">
+          <div class="img-box FrontierBeer2" role="navigation" aria-label="Link through to Frontier Brewery">
               <a href="breweries.html#Frontier">
             <div class="xop-info">
               <h3>Frontier</h3>
@@ -112,7 +113,7 @@
         </li>
 
         <li>
-          <div class="img-box BrewHogsBeer3">
+          <div class="img-box BrewHogsBeer3" role="navigation" aria-label="Link through to Brew Hogs Brewery">
               <a href="breweries.html#BrewHogs">
             <div class="xop-info">
               <h3>Brew Hogs</h3>
@@ -122,7 +123,7 @@
         </li>
 
         <li>
-          <div class="img-box DraymansBeer2">
+          <div class="img-box DraymansBeer2" role="navigation" aria-label="Link through to Draymans Brewery">
               <a href="breweries.html#BrewHogs">
             <div class="xop-info">
               <h3>Drayman's</h3>
@@ -132,7 +133,7 @@
         </li>
 
         <li>
-            <div class="img-box HazeldeanBeer2">
+            <div class="img-box HazeldeanBeer2" role="navigation" aria-label="Link through to Hazeldean Brewery">
                 <a href="breweries.html#Hazeldean">
                 <div class="xop-info">
                 <h3>Hazeldean</h3>
@@ -142,7 +143,7 @@
         </li>
 
         <li>
-          <div class="img-box BrewHogsBeer2">
+          <div class="img-box BrewHogsBeer2" role="navigation" aria-label="Link through to Brew Hogs Brewery">
               <a href="breweries.html#BrewHogs">
             <div class="xop-info">
               <h3>Brew Hogs</h3>
@@ -152,7 +153,7 @@
         </li>
 
         <li>
-          <div class="img-box RedRockBeer2">
+          <div class="img-box RedRockBeer2" role="navigation" aria-label="Link through to Red Rock Brewery">
               <a href="breweries.html#RedRock">
             <div class="xop-info">
               <h3>Red Rock</h3>
@@ -162,7 +163,7 @@
         </li>
 
         <li>
-          <div class="img-box MadGiantBeer2">
+          <div class="img-box MadGiantBeer2" role="navigation" aria-label="Link through to Mad Giant Brewery">
               <a href="breweries.html#MadGiant">
             <div class="xop-info">
               <h3>Mad Giant</h3>
@@ -172,7 +173,7 @@
         </li>
 
         <li>
-          <div class="img-box FrontierBeer3">
+          <div class="img-box FrontierBeer3" role="navigation" aria-label="Link through to Frontier Brewery">
               <a href="breweries.html#Frontier">
             <div class="xop-info">
               <h3>Frontier</h3>
@@ -182,7 +183,7 @@
         </li>
 
         <li>
-          <div class="img-box DraymansBeer3">
+          <div class="img-box DraymansBeer3" role="navigation" aria-label="Link through to Draymans Brewery">
               <a href="breweries.html#BrewHogs">
             <div class="xop-info">
               <h3>Drayman's</h3>
@@ -192,7 +193,7 @@
         </li>
 
         <li>
-          <div class="img-box FrontierBeer4">
+          <div class="img-box FrontierBeer4" role="navigation" aria-label="Link through to Frontier Brewery">
               <a href="breweries.html#Frontier">
             <div class="xop-info">
               <h3>Frontier</h3>
@@ -202,7 +203,7 @@
         </li>
 
         <li>
-          <div class="img-box MadGiantBeer3">
+          <div class="img-box MadGiantBeer3" role="navigation" aria-label="Link through to Mad Giant Brewery">
               <a href="breweries.html#MadGiant">
             <div class="xop-info">
               <h3>Mad Giant</h3>
@@ -212,7 +213,7 @@
         </li>
 
         <li>
-          <div class="img-box BrewHogsBeer4">
+          <div class="img-box BrewHogsBeer4" role="navigation" aria-label="Link through to Brew Hogs Brewery">
               <a href="breweries.html#BrewHogs">
             <div class="xop-info">
               <h3>Brew Hogs</h3>
@@ -222,7 +223,7 @@
         </li>
 
         <li>
-          <div class="img-box RedRockBeer3">
+          <div class="img-box RedRockBeer3" role="navigation" aria-label="Link through to Red Rock Brewery">
               <a href="breweries.html#RedRock">
             <div class="xop-info">
               <h3>Red Rock</h3>
@@ -233,7 +234,7 @@
 
 
         <li>
-          <div class="img-box HazeldeanBeer3">
+          <div class="img-box HazeldeanBeer3" role="navigation" aria-label="Link through to Hazeldean Brewery">
               <a href="breweries.html#Hazeldean">
             <div class="xop-info">
               <h3>Hazeldean</h3>
@@ -243,7 +244,7 @@
         </li>
 
         <li>
-            <div class="img-box RedRockBeer4">
+            <div class="img-box RedRockBeer4" role="navigation" aria-label="Link through to Red Rock Brewery">
                 <a href="breweries.html#RedRock">
               <div class="xop-info">
                 <h3>Red Rock</h3>
@@ -261,7 +262,7 @@
     
   <footer class="footer">
       <div class="logolink">
-          <div ><img src="img/BeerClub.png"></div>
+        <div ><img src="img/BeerClub.png" alt="Jug of Beer logo"></div>
           <div><p class="footer-links">
               <a href="index.html">HOME</a>
               <a href="beers.html">BEERS</a>

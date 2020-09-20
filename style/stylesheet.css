@@ -81,6 +81,10 @@ button {
 }
 
 
+#memberarea_li{
+    display : none;
+}
+
 /* Used to hide Member Area from casual browsing */
     .navbar_hide{
         display:none;
@@ -408,7 +412,9 @@ margin-top: 0;
       display: none;
   }
 
-
+#joinlogOut{
+    display: none;
+}
 
 
 /* FOOTER */

@@ -12,7 +12,7 @@
     <script src="scripts/main.js"></script>
 </head>
 
-<body>
+<body onload="checkLogIn()">
 <div class="myWrapper">
 
     <div class= "myTop">
@@ -24,18 +24,19 @@
                 <li class="navbar_li"><a href="breweries.html" title="a Short description of breweries we plan to visit, with brewery contact details">BREWERIES</a></li>
                 <li class="navbar_li"><a href="learn.html" title="Links to different articles where you can learn about beer and brewing" >ARTICLES</a></li>
                 <li class="navbar_li"><a href="join.html" title="Web form which you can complete to join the club">JOIN</a></li>
-                <li class="navbar_li"><a href="member.html" title="Member area where a survey is used to determine which brewery to visit next">MEMBER AREA</a></li>
+                <li class="navbar_li" id = "memberarea_li" ><a href="member.html" title="Member area where a survey is used to determine which brewery to visit next">MEMBER AREA</a></li>
             </ul>
         </nav>
         <div class="myHeader">
-            <img src="img/hder_small.jpg"> 
+            <img src="img/hder_small.jpg" alt="Website header showing various craft beers on a shelf"> 
             <div class="text_center"><h1>H O M E</h1></div>
         </div>
     </div>
 
 
         <div class="myContent">
-
+            <!-- There are 2 types of articles 1) Articles abour Beer  2) Articles about how to brew beer
+            The navigation below uses javascript from scripts\main.js  on order to only show the type of articles the user wants to see  -->
             <div class="myReadList">
             <nav class="navbar">
                 <ul class="navbar_ul">  
@@ -53,7 +54,6 @@
                         but some entrepreneurial-minded folks saw an opportunity to launch an exciting start-up business...<a href="https://www.mixerdirect.com/blogs/mixer-direct-blog/a-brief-history-of-craft-beer#:~:text=Two%20Centuries%20of%20Status%20Quo,and%20ever%2Dgrowing%20customer%20base."> 
                             read more</a></p>
                 </div></article>
-                
                 <article><div class="brew_article">
                     <h3>6 Tips Everyone Needs to Know Before They Brew Their Own Beer</h3>
                     <p>If you are just getting started then there are a few things you need to know. 
@@ -104,7 +104,7 @@
 
         <footer class="footer">
             <div class="logolink">
-                <div ><img src="img/BeerClub.png"></div>
+                <div ><img src="img/BeerClub.png" alt="Jug of Beer logo"></div>
                 <div><p class="footer-links">
                     <a href="index.html">HOME</a>
                     <a href="beers.html">BEERS</a>
@@ -113,7 +113,7 @@
                     <a href="join.html">JOIN</a>
                 </p></div>	
             </div>
-    
+          
             <div class="footer_other">
                 <div> <p>© 2020 Vicus Brits UoL Project</p> </div>
                 <div> <p><i class="fa fa-map-marker"></i>
@@ -128,7 +128,7 @@
                 </div>
                 <div >  <p>About the Club: On every second Saturday of the month we organise a fun trip to a new craft beer brewery.</p> </div>
             </div>
-        </footer>
+          </footer>
     </div>
     </body>
     </html>

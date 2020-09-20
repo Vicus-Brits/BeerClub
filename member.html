@@ -2,8 +2,13 @@
 <html lang="en">
 
 <head>
+    <title>Beer Club Membership Area</title>
+    <meta name="description" content="Beer Club is a group of Beer Nerds visiting a different brewery every month" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Member Area</title>
+    <meta charset="utf-8">
+    <!-- keep robots away  -->
+    <meta name=”robots” content="noindex, nofollow">
+
     <!-- imported stylesheets -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -12,7 +17,10 @@
     <script src="scripts/main.js"></script>
 </head>
 
-<body>
+<body onload="checkLogIn()">
+ 
+<!--The membership navigation link is hidden by default ( even though you could still navigate to \beerclub\member.html)
+We are also asking google not to send the robots here, it is a private space after all -->
 
     <div class= "myTop">
         <nav class="navbar">
@@ -27,7 +35,7 @@
             </ul>
         </nav>
         <div class="myHeader">
-            <img src="img/hder_small.jpg"> 
+            <img src="img/hder_small.jpg" alt="Website header showing various craft beers on a shelf"> 
             <div class="text_center"><h1>H O M E</h1></div>
         </div>
     </div>
@@ -35,21 +43,28 @@
     <div class="myContent" >
 
         <h1>What is happening? </h1>
-        <p> Our next brewery visit is set for <time datetime="2020-10-12 16:00"> Saturday 12 Oct @ 16:00 </time>.</p>
-
-        <h3>The votes so far</h3>
-        <p>As per usual, we will use a surveymonkey to listen for the voice of the poeple</p>
-        <p><a href="https://www.surveymonkey.com/results/SM-WYF7SX8H7/" target="_blank">See Results </a></p>
-        <p>(The link opens in a second browser window)</p>
-
-        <h3>It is your duty and privilige as member to vote on which brewery we visit next</h3>
-        <p>Please do so here..</p>
+        <p> Our next brewery visit is set for <time datetime="2020-10-12 16:00"> Saturday 12 Oct @ 16:00. </time>.</p>
+        <br>
+        <h3>The votes so far: </h3>
+        <p><a href="https://www.surveymonkey.com/results/SM-WYF7SX8H7/" target="_blank">See Results</a><i>(opens in a second browser window)</i></p>
+        <br>
+        
+        <h3>It is your duty and privilige as member to vote on which brewery we visit next.</h3>
+        <p>As per usual, we will use a surveymonkey to listen for the voice of the people.</p>
+        <p>Please cast your vote here..</p>
+        <br> <!-- Survey Monkey call -->
         <script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd7rgBL4OcyTDm8fIJTLRSQMgDNSQ_2B42WtzGFxv_2F9jput.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script><a style="font: 12px Helvetica, sans-serif; color: #999; text-decoration: none;" href=www.surveymonkey.com> Create your own user feedback survey </a>
+        <br>
 
+    <!-- log out removes the Membership navigation link  -->
     </div>
+    <div class="row" id = "logOut">
+        <input type="button" value="Log Out"  onclick="memberLogOut()">
+    </div>
+
     <footer class="footer">
         <div class="logolink">
-            <div ><img src="img/BeerClub.png"></div>
+            <div ><img src="img/BeerClub.png" alt="Jug of Beer logo"></div>
             <div><p class="footer-links">
                 <a href="index.html">HOME</a>
                 <a href="beers.html">BEERS</a>

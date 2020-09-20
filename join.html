@@ -6,8 +6,11 @@
 <html lang="en">
 
 <head>
+    <!-- https://ahrefs.com/blog/seo-meta-tags/ -->
+    <title>Join Beer Club</title>
+    <meta name="description" content="Beer Club is a group of Beer Nerds visiting a different brewery every month" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Join</title>
+    <meta charset="utf-8">
     <!-- imported stylesheets -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -16,7 +19,7 @@
     <script src="scripts/main.js"></script>
 </head>
 
-<body>
+<body onload="checkLogIn()">
 
   <div class= "myTop">
     <nav class="navbar">
@@ -27,139 +30,126 @@
             <li class="navbar_li"><a href="breweries.html" title="a Short description of breweries we plan to visit, with brewery contact details">BREWERIES</a></li>
             <li class="navbar_li"><a href="learn.html" title="Links to different articles where you can learn about beer and brewing" >ARTICLES</a></li>
             <li class="navbar_li"><a href="join.html" title="Web form which you can complete to join the club">JOIN</a></li>
-            <li class="navbar_li"><a href="member.html" title="Member area where a survey is used to determine which brewery to visit next">MEMBER AREA</a></li>
+            <li class="navbar_li" id = "memberarea_li" ><a href="member.html" title="Member area where a survey is used to determine which brewery to visit next">MEMBER AREA</a></li>
         </ul>
     </nav>
     <div class="myHeader">
-        <img src="img/hder_small.jpg"> 
+      <img src="img/hder_small.jpg" alt="Website header showing various craft beers on a shelf"> 
         <div class="text_center"><h1>H O M E</h1></div>
     </div>
 </div>
 
-        <span class="myContainer">
+<div class="myForms">
 
-        <div class="myForms">
-          <button class="button" id="memberYesNo" onclick="memberJoin()">Not a member yet? </button>
-          <div id = "memberResponse">
-            <p id="formComments">Thanks for joining</p> 
-            <p>Please log in with - </p> 
-            <p>User Name: Temp</p>    
-            <p>Password: Temp</p>                  
+  <button class="button" id="memberYesNo" onclick="memberJoin()">Not a member yet? </button>
+
+  <div id = "memberResponse">
+    <p id="formComments"> </p> 
+    <!-- <p>Please log in with - </p> 
+    <p>User Name: Temp</p>    
+    <p>Password: Temp</p>                   -->
+  </div>
+
+  <!-- The log in form is shown by default, but hidden when the id="memberYesNo" button is clicked -->
+  <div id="loginWrapper">
+    <form id="loginForm" >
+
+      <h1>LOG IN</h1>
+      <div class="row">
+        <div class="col-25">
+          <label for="uname">User Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="uname" name="UserName" placeholder="Your user name..[UoL]">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Password</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="pword" name="password" placeholder="Your password..[UoL]">
+        </div>
+      </div>
+
+      <div class="row">
+        <input type="button" value="Log In" onclick="memberLogin()">
+      </div>
+
+    </form>
+  </div>
+
+  <!-- The join form is hidden by default and presented when the user indicates that he/she is not a member ( [id="memberYesNo"] button clicked )-->
+  <div id="joinWrapper">
+    <form id="membershipform">
+        <h1>JOIN</h1>
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
           </div>
-
-  
-          <div id="loginWrapper">
-          <form id="loginForm" >
-
-            <h1>LOG IN</h1>
-
-            <div class="row">
-              <div class="col-25">
-                <label for="uname">User Name</label>
-              </div>
-              <div class="col-75">
-                <input type="text" id="uname" name="UserName" placeholder="Your user name..[UoL]">
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-25">
-                <label for="lname">Password</label>
-              </div>
-              <div class="col-75">
-                <input type="text" id="pword" name="password" placeholder="Your password..[UoL]">
-              </div>
-            </div>
-
-            <div class="row">
-              <input type="button" value="Log In" onclick="memberLogin()">
-            </div>
-
-          </form>
+          <div class="col-75">
+            <input type="text" id="fname" name="FirstName" placeholder="Your name..">
+          </div>
         </div>
-
-
-            <div id="joinWrapper">
-            <form id="membershipform">
-
-                <h1>JOIN</h1>
-
-                <div class="row">
-                  <div class="col-25">
-                    <label for="fname">First Name</label>
-                  </div>
-                  <div class="col-75">
-                    <input type="text" id="fname" name="FirstName" placeholder="Your name..">
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-25">
-                    <label for="lname">Last Name</label>
-                  </div>
-                  <div class="col-75">
-                    <input type="text" id="lname" name="LastName" placeholder="Your last name..">
-                  </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-25">
-                      <label for="email">Email Address</label>
-                    </div>
-                    <div class="col-75">
-                      <input type="text" id="email" name="Email" placeholder="Your email address..">
-                    </div>
-                </div>
-
-                <div class="row">
-                  <input type="button" value="Join" onclick="memberreply()">
-                </div>
-
-              </form>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="LastName" placeholder="Your last name..">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+              <label for="email">Email Address</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="email" name="Email" placeholder="Your email address..">
             </div>
         </div>
+        <div class="row">
+          <input type="button" value="Join" onclick="memberreply()">
+        </div>
+    </form>
+  </div>
+
+<!-- The log out button is hidden by default and presented when the user is logged in and navigates to join.html-->
+  <div class="row" id = "joinlogOut">
+    <input type="button" value="Log Out"  onclick="memberLogOut()">
+  </div>
 
 
-        <footer class="footer">
+</div>
 
-			<div class="logolink">
-                <div >
-                <img src="img/BeerClub.png">
-                </div>
-                <div>
-				<p class="footer-links">
-                    <a href="index.html">HOME</a>
-                    <a href="beers.html">BEERS</a>
-                    <a href="breweries.html">BREWERIES</a>
-                    <a href="learn.html">ARTICLES</a>
-                    <a href="join.html">JOIN</a>
-                </p>
-                </div>	
-			</div>
 
-			<div class="footer_other">
-                <div>
-                    <p>© 2020 Vicus Brits UoL Project</p>
-                </div>
-				<div>
-					<p><i class="fa fa-map-marker"></i>
-					  Centurion Area
-						Gauteng - South Africa</p>
-				</div>
-				<div>
-					<p><i class="fa fa-phone"></i>
-					+27 82-9040718</p>
-				</div>
-				<div>
-					<p></p><i class="fa fa-envelope"></i>
-					<a href="mailto:vicusbritsmail@gmail.com">vicusbritsmail@gmail.com</a></p>
-				</div>
-                <div >
-                    <p>About the Club: On every second Saturday of the month we organise a fun trip to a new craft beer brewery.</p>
-                </div>
-            </div>
-	
-		</footer>
+<footer class="footer">
+  <div class="logolink">
+      <div ><img src="img/BeerClub.png" alt="Jug of Beer logo"></div>
+      <div><p class="footer-links">
+          <a href="index.html">HOME</a>
+          <a href="beers.html">BEERS</a>
+          <a href="breweries.html">BREWERIES</a>
+          <a href="learn.html">ARTICLES</a>
+          <a href="join.html">JOIN</a>
+      </p></div>	
+  </div>
 
-    </body>
+  <div class="footer_other">
+      <div> <p>© 2020 Vicus Brits UoL Project</p> </div>
+      <div> <p><i class="fa fa-map-marker"></i>
+              Centurion Area
+              Gauteng - South Africa</p>
+      </div>
+      <div> <p><i class="fa fa-phone"></i>
+          +27 82-9040718</p>
+      </div>
+      <div> <p></p><i class="fa fa-envelope"></i>
+          <a href="mailto:vicusbritsmail@gmail.com">vicusbritsmail@gmail.com</a></p>
+      </div>
+      <div >  <p>About the Club: On every second Saturday of the month we organise a fun trip to a new craft beer brewery.</p> </div>
+  </div>
+</footer>
+
+</body>
 </html>

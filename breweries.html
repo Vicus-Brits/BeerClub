@@ -2,8 +2,11 @@
 <html lang="en">
 
 <head>
+    <!-- https://ahrefs.com/blog/seo-meta-tags/ -->
+    <title>Beer Club Breweries</title>
+    <meta name="description" content="Beer Club is a group of Beer Nerds visiting a different brewery every month" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Breweries</title>
+    <meta charset="utf-8">
     <!-- imported stylesheets -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -12,7 +15,7 @@
     <script src="scripts/main.js"></script>
 </head>
 
-<body>
+<body onload="checkLogIn()">
 
     <div class= "myTop">
         <nav class="navbar">
@@ -23,20 +26,21 @@
                 <li class="navbar_li"><a href="breweries.html" title="a Short description of breweries we plan to visit, with brewery contact details">BREWERIES</a></li>
                 <li class="navbar_li"><a href="learn.html" title="Links to different articles where you can learn about beer and brewing" >ARTICLES</a></li>
                 <li class="navbar_li"><a href="join.html" title="Web form which you can complete to join the club">JOIN</a></li>
-                <li class="navbar_li"><a href="member.html" title="Member area where a survey is used to determine which brewery to visit next">MEMBER AREA</a></li>
+                <li class="navbar_li" id = "memberarea_li" ><a href="member.html" title="Member area where a survey is used to determine which brewery to visit next">MEMBER AREA</a></li>
             </ul>
         </nav>
         <div class="myHeader">
-            <img src="img/hder_small.jpg"> 
+            <img src="img/hder_small.jpg" alt="Website header showing various craft beers on a shelf"> 
             <div class="text_center"><h1>H O M E</h1></div>
         </div>
     </div>
 
+        <!-- Brewery ID tags are used as targets to link beer from beers.html to breweries on breweries html -->
         <div class="myBreweries">
                 <div class="myBreweries_container" >
                     <div class="brewery_left" id="RedRock">
                         <div><h2> RedRock Brewery</h2></div>
-                        <div><img src="img/RedRock.jpg"></div> 
+                        <div><img src="img/RedRock.jpg" alt="Image of Red Rock Brewery which has a cool bar area"></div> 
                         <p><i class="fa fa-map-marker"></i> 19 Milkyway Ave, Linbro Park, Midrand, 2090</p>
                         <p><i class="fa fa-globe" aria-hidden="true"></i>  https://redrock.co.za/</p>
 
@@ -48,7 +52,7 @@
                     </div>
                     <div class="brewery_right" id="BrewHogs">
                         <h2> Brew Hogs Brewery</h2>
-                        <img src="img/BrewHogs.jpg"> 
+                        <img src="img/BrewHogs.jpg" alt="Image of all the different beers on tap at Brew Hogs Brewery">> 
                         <p><i class="fa fa-map-marker"></i> 1Unit 50, Barbeque Corner, Dytchley Rd, Barbeque Downs, Kyalami</p>
                         <p><i class="fa fa-globe" aria-hidden="true"></i>  http://www.brewhogs.co.za/index.html</p>
 
@@ -57,7 +61,7 @@
                     </div>
                     <div class="brewery_left" id="Frontier">
                             <h2> Frontier Brewery</h2>
-                            <img src="img/Frontier.jpg"> 
+                            <img src="img/Frontier.jpg" alt="Image of different Frontier Brewery beers lined up on a table"> 
                             <p><i class="fa fa-map-marker"></i> UNIT 10 WYNBERG WORKS 40 5TH STREET</p>
                             <p><i class="fa fa-globe" aria-hidden="true"></i>  https://www.frontierbeer.co.za/</p>
                             <p>The tap room and nano-brewery is very much the heart-beat of Frontier. It is our home. 
@@ -69,9 +73,9 @@
 
 
                     </div>
-                    <div class="brewery_right" id="Drayman">
+                    <div class="brewery_right">
                         <h2> Drayman Brewery</h2>
-                        <img src="img/Draymans.jpg"> 
+                        <img src="img/Draymans.jpg" id="Drayman" alt="Image of the brew master at Drayman’s brewery tapping whisky"> 
                         <p><i class="fa fa-map-marker"></i> 222 Dykor Street Silverton Pretoria 0184 South Africa </p>
                         <p><i class="fa fa-globe" aria-hidden="true"></i> Website  https://draymans.com/</p>
                         <p>Drayman’s Highveld Single Malt Whisky is the first ever Single Malt from the Highveld of South Africa. 
@@ -85,7 +89,7 @@
                     </div>
                     <div class="brewery_left" id="Hazeldean">
                         <h2> Hazeldean Brewery</h2>
-                        <img src="img/Hazeldean.jpg"> 
+                        <img src="img/Hazeldean.jpg" alt="Image of the two brewmasters at Hazeldean Brewery "> 
                         <p><i class="fa fa-map-marker"></i> Address  Ridge Road, Hazeldean, Pretoria, 7530 </p>
                         <p><i class="fa fa-globe" aria-hidden="true"></i> https://www.hazeldeanbrewing.co.za/home</p>
                         <p>Drayman’s Highveld Single Malt Whisky is the first ever Single Malt from the Highveld of South Africa. 
@@ -97,7 +101,7 @@
                     </div>
                     <div class="brewery_right" id="MadGiant">
                         <h2> Mad Giant Brewery</h2>
-                        <img src="img/MadGiant.jpg"> 
+                        <img src="img/MadGiant.jpg" alt="Image of two award winning Mad Giant beers"> 
                         <p><i class="fa fa-map-marker"></i> 96 Conrad Drive Blairgowrie Randburg 2194</p>
                         <p><i class="fa fa-globe" aria-hidden="true"></i> http://www.madgiant.co.za/</p>
                         <p>URBAN LEGEND and KILLER HOP have lived up to their names and made us proud by bringing home the silver, and then some more. 
@@ -117,7 +121,7 @@
         
         <footer class="footer">
             <div class="logolink">
-                <div ><img src="img/BeerClub.jpg"></div>
+                <div ><img src="img/BeerClub.png" alt="Jug of Beer logo"></div>
                 <div><p class="footer-links">
                     <a href="index.html">HOME</a>
                     <a href="beers.html">BEERS</a>
