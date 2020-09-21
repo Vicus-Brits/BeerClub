@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- https://ahrefs.com/blog/seo-meta-tags/ -->
     <title>Articles</title>
+    <meta name="description" content="Beer Club is a group of Beer Nerds visiting a different brewery every month" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    
     <!-- imported stylesheets -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- imported javascript -->
+    <!-- jquery components used to make the call to the external joke API -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- custom code -->
     <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
     <script src="scripts/main.js"></script>
 </head>
 
+
 <body onload="checkLogIn()">
-<div class="myWrapper">
+<div class="mainWrapper">
+    <div class="myWrapper">
 
     <div class= "myTop">
         <nav class="navbar">
@@ -29,7 +38,7 @@
         </nav>
         <div class="myHeader">
             <img src="img/hder_small.jpg" alt="Website header showing various craft beers on a shelf"> 
-            <div class="text_center"><h1>H O M E</h1></div>
+            <div class="text_center"><h1>A R T I C L E S</h1></div>
         </div>
     </div>
 
@@ -133,6 +142,7 @@
                 <div ><p>About the Club: On every second Saturday of the month we organise a fun trip to a new craft beer brewery.</p></div>
             </div>
         </footer>
+    </div>
     </div>
     </body>
     </html>
