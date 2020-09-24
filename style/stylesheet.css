@@ -397,6 +397,10 @@ button {
 
 /* FORM STYLING */
 /* Styles the buttons on the form, standard and input buttons */
+.formWrapper{
+    margin-left: 5%;
+    margin-right: 5%;
+}
 .button, input[type=button]{
     background-color: #f6aa1c;
     width: 100%;
@@ -437,6 +441,10 @@ button {
         background-color: white;
       }
 
+      .formWrapper{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
       .text_center  {
         min-width: 600px;
         }
@@ -497,7 +505,7 @@ button {
     .brewery_left, .brewery_right {
         margin: auto;
          /* container from https://codepen.io/chriscoyier/pen/yvQQxM */
-         min-height: 650px;
+         min-height: 500px;
          min-width: 500px;
   }
 
@@ -521,6 +529,11 @@ button {
 
     body {
         background-color: gray;
+    }
+
+    .formWrapper{
+        margin-left: 25%;
+        margin-right: 25%;
     }
 
     .mainWrapper{
